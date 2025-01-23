@@ -47,6 +47,9 @@ logs/
 *.log
 .ruff_cache/
 .mypy_cache/
+pdfs/
+storage/processed/
+storage/processed/test_results/
 
 # Jupyter
 .ipynb_checkpoints
