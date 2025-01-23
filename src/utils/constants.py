@@ -1,71 +1,98 @@
-"""Centralized constants for Lightwriter_CLI."""
+"""Application constants and configuration."""
+
 from enum import Enum
 from pathlib import Path
 
-# File System
-DEFAULT_STORE_PATH = Path("storage")
-SUPPORTED_EXTENSIONS = [".pdf"]
-TEMP_DIR = DEFAULT_STORE_PATH / "temp"
 
-# Processing
-MAX_RETRIES = 3
-RETRY_DELAY = 10  # seconds
-CHUNK_SIZE = 1000
-MAX_WORKERS = 4
-
-# API Configuration
-CROSSREF_API_URL = "https://api.crossref.org/works/"
-ARXIV_API_BASE = "http://export.arxiv.org/api/query"
-
-# LightRAG Configuration
-DEFAULT_EMBEDDING_DIM = 1536
-MAX_TOKEN_SIZE = 8192
-DEFAULT_CHUNK_SIZE = 500
-DEFAULT_OVERLAP = 50
-
-class ProcessingState(Enum):
-    """Processing states for pipeline steps."""
-    PENDING = "pending"
+# Processing states
+class ProcessingState(str, Enum):
     PROCESSING = "processing"
     COMPLETED = "completed"
     FAILED = "failed"
 
-class DocumentType(Enum):
-    PDF = "pdf"
-    MARKDOWN = "markdown"
 
-class CitationType(Enum):
-    NUMERIC = "numeric"
-    AUTHOR_YEAR = "author_year"
+# Storage paths
+PROCESSED_OUTPUT_PATH = Path("storage/processed")
+DEFAULT_STORE_PATH = PROCESSED_OUTPUT_PATH / "lightrag_store"
 
-# Base paths
-PROCESSED_OUTPUT_PATH = DEFAULT_STORE_PATH / "processed"
-METADATA_PATH = DEFAULT_STORE_PATH / "metadata"
-VECTOR_PATH = DEFAULT_STORE_PATH / "vectors"
 
-# Processing settings
-MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
-SUPPORTED_FORMATS = [".pdf"]
+# API configurations
+CROSSREF_API_URL = "https://api.crossref.org/works/"
+ARXIV_API_URL = "http://export.arxiv.org/api/query?"
+API_TIMEOUT = 10
+CROSSREF_HEADERS = {"User-Agent": "LightWriter/1.0 (mailto:your@email.com)"}
 
-# Output settings
-DEBUG_OUTPUT = True  # For development phase
-CONTEXT_WINDOW = 100  # Characters before/after for context
+# Processing parameters
+CONTEXT_WINDOW = 3  # Sentences around citations for context
+MAX_FILE_SIZE_MB = 50
 
-# Success Messages
-SUCCESS_MESSAGES = {
-    "text_extraction": "✓ Text extracted successfully",
-    "identifier_found": "✓ Found {identifier_type}: {identifier}",
-    "metadata_fetch": "✓ Metadata fetched successfully",
-    "references_found": "✓ Found {count} references",
-    "equations_found": "✓ Found {count} equations",
-    "store_update": "✓ Store updated successfully"
+# Vector storage
+DEFAULT_EMBEDDING_DIM = 384  # Dimension for vector embeddings
+VECTOR_STORE_PATH = PROCESSED_OUTPUT_PATH / "vector_store"
+EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
+
+# Vector storage
+DEFAULT_EMBEDDING_DIM = 384  # Dimension for vector embeddings
+ALLOWED_MIME_TYPES = ["application/pdf"]
+
+# Application messages
+ERROR_MESSAGES = {
+    "extraction_failed": "Failed to extract {step}: {error}",
+    "validation_failed": "Validation failed for {field}: {reason}",
+    "api_connection": "API connection failed: {error}",
+    "xml_parse": "XML parsing failed: {error}",
 }
 
-# Error Messages
-ERROR_MESSAGES = {
-    "file_not_found": "⚠️ File not found: {file_path}",
-    "extraction_failed": "⚠️ {step} extraction failed: {error}",
-    "api_error": "⚠️ {service} API error: {error}",
-    "validation_failed": "⚠️ Validation failed: {error}",
-    "store_error": "⚠️ Store operation failed: {error}"
-} 
+SUCCESS_MESSAGES = {
+    "text_extraction": "Text extraction successful",
+    "markdown_conversion": "Markdown conversion successful",
+    "reference_lookup": "Reference lookup successful",
+}
+
+# PDF processing configuration
+MARKER_CONFIG = {
+    "output_format": "markdown",
+    "layout_analysis": True,
+    "detect_equations": True,
+    "equation_detection_confidence": 0.3,
+    "detect_inline_equations": True,
+    "detect_tables": True,
+    "detect_lists": True,
+    "detect_code_blocks": True,
+    "detect_footnotes": True,
+    "equation_output": "latex",
+    "preserve_math": True,
+    "equation_detection_mode": "aggressive",
+    "equation_context_window": 3,
+    "equation_pattern_matching": True,
+    "equation_symbol_extraction": True,
+    "header_detection": {
+        "enabled": True,
+        "style": "atx",
+        "levels": {"title": 1, "section": 2, "subsection": 3},
+        "remove_duplicate_markers": True,
+    },
+    "list_detection": {
+        "enabled": True,
+        "unordered_marker": "-",
+        "ordered_marker": "1.",
+        "preserve_numbers": True,
+        "indent_spaces": 2,
+    },
+    "layout": {
+        "paragraph_breaks": True,
+        "line_spacing": 2,
+        "remove_redundant_whitespace": True,
+        "preserve_line_breaks": True,
+        "preserve_blank_lines": True,
+    },
+    "preserve": {
+        "links": True,
+        "tables": True,
+        "images": True,
+        "footnotes": True,
+        "formatting": True,
+        "lists": True,
+        "headers": True,
+    },
+}

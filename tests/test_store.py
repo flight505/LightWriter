@@ -1,144 +1,201 @@
 """Unit tests for store and metadata components."""
-import pytest
+
+import shutil
 from pathlib import Path
-from unittest.mock import patch, MagicMock
-from src.core.store.manager import StoreManager
-from src.core.store.lightrag import LightRAGStore
+
+import numpy as np
+import pytest
+
 from src.core.metadata.consolidator import MetadataConsolidator
+from src.core.metadata.models import DocumentMetadata
+from src.core.store.lightrag import LightRAGStore
+from src.core.store.manager import StoreManager
 from src.utils.constants import DEFAULT_STORE_PATH
 
 pytestmark = pytest.mark.asyncio  # Mark all tests as async
 
 # Test data
-TEST_STORE_PATH = DEFAULT_STORE_PATH / "test_store"
+TEST_STORE_PATH = DEFAULT_STORE_PATH / "test_results" / "test_store"
 SAMPLE_METADATA = {
-    'file_hash': 'abc123',
-    'identifier_info': {
-        'identifier': '10.1234/sample',
-        'identifier_type': 'doi',
-        'method': 'extraction'
-    },
-    'references': [
+    "file_hash": "abc123",
+    "identifier": "10.1234/sample",
+    "identifier_type": "doi",
+    "title": "Sample Paper",
+    "authors": [{"full_name": "Author A"}],
+    "abstract": "Sample abstract",
+    "year": 2023,
+    "references": [
+        {"title": "Sample Paper", "authors": [{"full_name": "Author A"}], "year": 2023, "reference_id": "ref_1"}
+    ],
+    "equations": [{"content": "E = mc^2", "context": "Einstein equation", "equation_type": "inline"}],
+    "citations": [
         {
-            'title': 'Sample Paper',
-            'authors': [{'full_name': 'Author A'}],
-            'year': 2023
+            "text": "[1]",
+            "context": "Sample citation",
+            "citation_type": "numeric",
+            "reference_id": "ref_1",
+            "location": {"start": 0, "end": 3},
         }
     ],
-    'equations': [
-        {
-            'content': 'E = mc^2',
-            'context': 'Einstein equation'
-        }
-    ],
-    'errors': []
+    "processing_status": "completed",
+    "validated": True,
+    "validation_errors": [],
 }
 
-@pytest.fixture(scope="module")
+
+@pytest.fixture(scope="function")
 def test_file():
     """Create test file path."""
     return Path("test_doc.pdf")
 
-@pytest.fixture(scope="module")
-def store_path():
+
+@pytest.fixture(scope="function")
+async def store_path():
     """Create and clean test store path."""
     path = TEST_STORE_PATH
     if path.exists():
-        for file in path.glob("*"):
-            file.unlink()
-        path.rmdir()
-    path.mkdir(parents=True)
-    return path
+        shutil.rmtree(path, ignore_errors=True)
+    path.mkdir(parents=True, exist_ok=True)
 
-@pytest.fixture
-def metadata_consolidator(store_path):
+    # Create required subdirectories
+    (path / "lightrag" / "documents").mkdir(parents=True)
+    (path / "lightrag" / "vectors").mkdir(parents=True)
+    (path / "lightrag" / "metadata").mkdir(parents=True)
+
+    yield path
+    if path.exists():
+        shutil.rmtree(path, ignore_errors=True)
+
+
+@pytest.fixture(scope="function")
+async def metadata_consolidator(store_path):
     """Create test metadata consolidator."""
-    return MetadataConsolidator(store_path=store_path)
+    consolidator = MetadataConsolidator(store_path=store_path)
+    # Initialize metadata file
+    consolidator._ensure_metadata_file()
+    return consolidator
 
-@pytest.fixture
-def lightrag_store(store_path):
+
+@pytest.fixture(scope="function")
+async def lightrag_store(store_path):
     """Create test LightRAG store."""
-    return LightRAGStore(store_path=store_path)
 
-@pytest.fixture
-def store_manager(store_path):
+    # Mock embedding function
+    def mock_embedding_func(texts):
+        return np.random.rand(len(texts), 384)  # Return random embeddings
+
+    mock_embedding_func.embedding_dim = 384
+
+    return LightRAGStore(store_path=store_path, embedding_dim=384, embedding_func=mock_embedding_func)
+
+
+@pytest.fixture(scope="function")
+async def store_manager(store_path):
     """Create test store manager."""
-    return StoreManager(store_path=store_path)
+    manager = StoreManager(store_path=store_path)
+    # Initialize metadata file
+    manager.metadata_consolidator._ensure_metadata_file()
+    return manager
 
-def test_metadata_consolidation(metadata_consolidator, test_file):
+
+async def test_metadata_consolidation(metadata_consolidator, test_file):
     """Test metadata consolidation."""
-    metadata = metadata_consolidator.consolidate_metadata(
+    metadata = await metadata_consolidator.consolidate_metadata_async(
         file_path=test_file,
-        file_hash=SAMPLE_METADATA['file_hash'],
-        identifier_info=SAMPLE_METADATA['identifier_info'],
-        references=SAMPLE_METADATA['references'],
-        equations=SAMPLE_METADATA['equations']
+        file_hash=SAMPLE_METADATA["file_hash"],
+        identifier_info={
+            "identifier": SAMPLE_METADATA["identifier"],
+            "identifier_type": SAMPLE_METADATA["identifier_type"],
+        },
+        metadata={
+            "title": SAMPLE_METADATA["title"],
+            "authors": SAMPLE_METADATA["authors"],
+            "abstract": SAMPLE_METADATA["abstract"],
+            "year": SAMPLE_METADATA["year"],
+        },
+        references=SAMPLE_METADATA["references"],
+        equations=SAMPLE_METADATA["equations"],
+        citations=SAMPLE_METADATA["citations"],
     )
-    
-    assert metadata is not None
-    assert metadata.file_hash == SAMPLE_METADATA['file_hash']
-    assert metadata.identifier == SAMPLE_METADATA['identifier_info']['identifier']
-    assert len(metadata.references) == len(SAMPLE_METADATA['references'])
-    assert len(metadata.equations) == len(SAMPLE_METADATA['equations'])
 
-def test_metadata_storage(metadata_consolidator, test_file):
+    assert metadata is not None
+    assert metadata.file_hash == SAMPLE_METADATA["file_hash"]
+    assert metadata.identifier == SAMPLE_METADATA["identifier"]
+    assert len(metadata.references) == len(SAMPLE_METADATA["references"])
+    assert len(metadata.equations) == len(SAMPLE_METADATA["equations"])
+    assert len(metadata.citations) == len(SAMPLE_METADATA["citations"])
+    assert metadata.validated
+
+
+async def test_metadata_storage(metadata_consolidator, test_file):
     """Test metadata storage and retrieval."""
     # Store metadata
-    metadata_consolidator.consolidate_metadata(
+    stored_metadata = await metadata_consolidator.consolidate_metadata_async(
         file_path=test_file,
-        file_hash=SAMPLE_METADATA['file_hash'],
-        identifier_info=SAMPLE_METADATA['identifier_info']
+        file_hash=SAMPLE_METADATA["file_hash"],
+        identifier_info={
+            "identifier": SAMPLE_METADATA["identifier"],
+            "identifier_type": SAMPLE_METADATA["identifier_type"],
+        },
     )
-    
-    # Retrieve metadata
-    stored_metadata = metadata_consolidator.get_metadata(test_file)
+
+    # Verify stored metadata
     assert stored_metadata is not None
-    assert stored_metadata.file_hash == SAMPLE_METADATA['file_hash']
-    
+    assert stored_metadata.file_hash == SAMPLE_METADATA["file_hash"]
+
     # Remove metadata
     metadata_consolidator.remove_metadata(test_file)
     assert metadata_consolidator.get_metadata(test_file) is None
 
-@patch('lightrag.LightRAG')
-def test_lightrag_store(mock_lightrag, lightrag_store):
-    """Test LightRAG store operations."""
-    # Mock LightRAG instance
-    mock_instance = MagicMock()
-    mock_lightrag.return_value = mock_instance
-    
-    # Test document addition
-    success = lightrag_store.add_document(SAMPLE_METADATA)
-    assert success
-    mock_instance.insert.assert_called_once()
-    
-    # Test search
-    mock_instance.query.return_value = {"matches": [{"text": "sample"}]}
-    results = lightrag_store.search("test query")
-    assert "matches" in results
-    mock_instance.query.assert_called_once()
 
-def test_store_manager_operations(store_manager, test_file):
+async def test_lightrag_store(lightrag_store):
+    """Test LightRAG store operations."""
+    # Create test metadata
+    metadata = DocumentMetadata(**SAMPLE_METADATA)
+
+    # Test document addition
+    success = await lightrag_store.add_document_async(metadata)
+    assert success
+
+    # Verify files were created
+    doc_path = lightrag_store.store_path / "documents" / f"{metadata.file_hash}.txt"
+    vec_path = lightrag_store.store_path / "vectors" / f"{metadata.file_hash}.npy"
+    meta_path = lightrag_store.store_path / "metadata" / f"{metadata.file_hash}.json"
+
+    assert doc_path.exists()
+    assert vec_path.exists()
+    assert meta_path.exists()
+
+    # Test search
+    results = await lightrag_store.search_async("test query")
+    assert isinstance(results, dict)
+    assert "matches" in results
+
+
+async def test_store_manager_operations(store_manager, test_file):
     """Test store manager operations."""
+    # Create test metadata
+    metadata = DocumentMetadata(**SAMPLE_METADATA)
+
     # Add document
-    success = store_manager.add_document(test_file, SAMPLE_METADATA)
+    success = await store_manager.add_document_async(test_file, metadata.model_dump())
     assert success
-    
+
     # Get metadata
-    metadata = store_manager.get_document_metadata(test_file)
-    assert metadata is not None
-    assert metadata['file_hash'] == SAMPLE_METADATA['file_hash']
-    
+    stored_metadata = await store_manager.get_document_metadata_async(test_file)
+    assert stored_metadata is not None
+    assert stored_metadata.file_hash == metadata.file_hash
+
     # Get all metadata
-    all_metadata = store_manager.get_all_metadata()
-    assert len(all_metadata) > 0
-    assert str(test_file) in all_metadata
-    
+    all_metadata = await store_manager.get_all_metadata_async()
+    assert len(all_metadata.get("documents", {})) > 0
+
     # Get stats
-    stats = store_manager.get_store_stats()
-    assert stats['document_count'] > 0
-    assert 'lightrag_stats' in stats
-    
+    stats = await store_manager.get_store_stats_async()
+    assert stats["document_count"] > 0
+    assert "lightrag_stats" in stats
+
     # Remove document
-    success = store_manager.remove_document(test_file)
+    success = await store_manager.remove_document_async(test_file)
     assert success
-    assert store_manager.get_document_metadata(test_file) is None 
+    assert await store_manager.get_document_metadata_async(test_file) is None

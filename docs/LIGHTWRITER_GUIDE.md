@@ -184,6 +184,52 @@ The system processes citations in academic papers using the following approach:
    - THEOREM: Mathematical theorems (TODO)
 
 
+# 4. Storage Setup
+
+1. Current Storage Setup:
+```
+/storage
+├── processed/
+│   ├── lightrag_store/  # Our LightRAG storage
+│   │   ├── documents/   # Document storage
+│   │   ├── vectors/     # Vector embeddings
+│   │   └── metadata/    # Document metadata
+│   └── test_results/    # Test outputs
+```
+
+2. Based on LightRAG defaults, we should use:
+- `kv_storage`: JsonKVStorage (default, good for local-first approach)
+- `vector_storage`: NanoVectorDBStorage (efficient local vector storage)
+- `graph_storage`: NetworkXStorage (simple local graph storage)
+- `embedding_func`: openai_embedding (as discussed)
+- `llm_model_func`: gpt-4o-mini (default, good balance)
+
+3. Architecture Proposal:
+```
+Frontend (Next.js 14+)                 Backend (Python)                Storage
+┌─────────────────┐                ┌─────────────────┐         ┌─────────────────┐
+│  React + shadcn │  ←API Calls→   │   FastAPI       │  ←→     │  LightRAG Store │
+│  Components     │                │   Endpoints     │         │  - Documents    │
+└─────────────────┘                └─────────────────┘         │  - Vectors     │
+        ↓                                  ↓                    │  - Metadata    │
+┌─────────────────┐                ┌─────────────────┐         │  - Graph       │
+│  State (Zustand)│                │   LightRAG      │         └─────────────────┘
+│  + TanStack     │                │   Processing    │                ↓
+└─────────────────┘                └─────────────────┘         ┌─────────────────┐
+                                          ↓                    │  OpenAI API     │
+                                   ┌─────────────────┐         │  - Embeddings   │
+                                   │   Extractors    │         │  - LLM Model    │
+                                   └─────────────────┘         └─────────────────┘
+```
+
+4. Integration Flow:
+- Frontend sends document/query to FastAPI
+- FastAPI routes to LightRAG processing
+- LightRAG handles storage/retrieval
+- OpenAI provides embeddings/completions
+- Results flow back through API
+
+
 
 ## 4. Implementation Guide
 
@@ -197,6 +243,25 @@ app/
     ├── page.tsx    // Documents list
     └── [id]/       // Single document view
 ```
+
+### Frontend Directory Structure (according to our documentation):
+```
+frontend/
+├── src/
+│   ├── app/                # App Router pages
+│   │   ├── academic/      # Academic content management
+│   │   ├── documents/     # Document processing
+│   │   └── knowledge/     # Knowledge graph interface
+│   ├── components/         # React components
+│   │   ├── ui/           # shadcn/ui components
+│   │   └── custom/       # Custom components
+│   ├── lib/               # Shared utilities
+│   │   ├── utils/        # Utility functions
+│   │   └── hooks/        # Custom React hooks
+│   └── store/             # Zustand stores
+
+```
+
 
 ### 4.2 Backend Implementation
 ```python

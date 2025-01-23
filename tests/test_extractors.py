@@ -1,11 +1,13 @@
 """Unit tests for extractors."""
-import pytest
 from pathlib import Path
-from unittest.mock import patch, MagicMock
-from src.core.extractors.pdf_extractor import PDFExtractor
-from src.core.extractors.identifier_extractor import IdentifierExtractor
-from src.core.extractors.reference_extractor import ReferenceExtractor
+from unittest.mock import MagicMock, patch
+
+import pytest
+
 from src.core.extractors.equation_extractor import EquationExtractor
+from src.core.extractors.identifier_extractor import IdentifierExtractor
+from src.core.extractors.pdf_extractor import PDFExtractor
+from src.core.extractors.reference_extractor import ReferenceExtractor
 
 # Test data
 TEST_PDFS_DIR = Path("tests/pdfs")
@@ -42,7 +44,7 @@ def test_pdf_extraction(pdf_file):
     """Test PDF text extraction."""
     extractor = PDFExtractor()
     results = extractor.extract_all(pdf_file)
-    
+
     assert results is not None
     assert "text" in results
     assert "markdown" in results
@@ -59,10 +61,10 @@ def test_identifier_extraction_doi(mock_pdf2doi, pdf_file):
         'identifier_type': 'doi',
         'method': 'extraction'
     }
-    
+
     extractor = IdentifierExtractor()
     result = extractor.extract_identifier(pdf_file)
-    
+
     assert result is not None
     assert result["identifier"] == SAMPLE_DOI
     assert result["identifier_type"] == "doi"
@@ -75,10 +77,10 @@ def test_identifier_extraction_arxiv(mock_pdf2doi, pdf_file):
         'identifier_type': 'arxiv',
         'method': 'extraction'
     }
-    
+
     extractor = IdentifierExtractor()
     result = extractor.extract_identifier(pdf_file)
-    
+
     assert result is not None
     assert result["identifier"] == SAMPLE_ARXIV
     assert result["identifier_type"] == "arxiv"
@@ -99,10 +101,10 @@ def test_reference_extraction_crossref(mock_get):
         }
     }
     mock_get.return_value = mock_response
-    
+
     extractor = ReferenceExtractor()
     refs = extractor._extract_from_crossref(SAMPLE_DOI)
-    
+
     assert len(refs) > 0
     assert refs[0].title == "Sample Paper"
     assert len(refs[0].authors) > 0
@@ -112,7 +114,7 @@ def test_reference_extraction_text():
     """Test reference extraction from text."""
     extractor = ReferenceExtractor()
     refs = extractor._extract_from_text(SAMPLE_TEXT)
-    
+
     assert isinstance(refs, list)
     if extractor.anystyle_available:
         assert len(refs) > 0
@@ -121,15 +123,15 @@ def test_equation_extraction():
     """Test equation extraction."""
     extractor = EquationExtractor()
     equations = extractor.extract_equations(SAMPLE_MARKDOWN)
-    
+
     assert len(equations) == 3
-    
+
     # Check inline equation
     assert any(eq.content == "E = mc^2" for eq in equations)
-    
+
     # Check display equation
     assert any(eq.content == "F = ma" for eq in equations)
-    
+
     # Check numbered equation
     assert any(eq.content == "PV = nRT" for eq in equations)
 
@@ -137,8 +139,8 @@ def test_equation_context():
     """Test equation context extraction."""
     extractor = EquationExtractor()
     equations = extractor.extract_equations(SAMPLE_MARKDOWN)
-    
+
     for eq in equations:
         assert eq.context
         assert isinstance(eq.context, str)
-        assert len(eq.context) > 0 
+        assert len(eq.context) > 0

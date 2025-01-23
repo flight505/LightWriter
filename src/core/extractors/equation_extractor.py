@@ -1,104 +1,134 @@
-"""Extract equations and their context from markdown content."""
+"""Extract equations from academic text."""
+
 import re
-from typing import List, Dict, Any
-from ...utils.logger import logger
-from ...utils.constants import SUCCESS_MESSAGES, ERROR_MESSAGES
-from ..metadata.models import Equation
+from typing import List
+
+from ..metadata.models import Equation, Symbol
+
 
 class EquationExtractor:
-    """Extract equations and their context from markdown content."""
-    
-    # Regex patterns for equation extraction
-    INLINE_MATH = r'\$([^\$]+)\$'
-    DISPLAY_MATH = r'\$\$([\s\S]+?)\$\$'
-    NUMBERED_MATH = r'\\begin{equation}([\s\S]+?)\\end{equation}'
-    
+    """Extract equations from academic text."""
+
+    def __init__(self):
+        """Initialize equation patterns."""
+        self.patterns = [
+            (r"\$\$(.*?)\$\$", "display"),  # Display equations
+            (r"\$(.*?)\$", "inline"),  # Inline equations
+            (r"\\begin\{equation\}(.*?)\\end\{equation\}", "numbered"),
+            (r"\\[(.*?)\\]", "display"),
+            (r"\\begin\{align\*?\}(.*?)\\end\{align\*?\}", "display"),
+            (r"\\begin\{eqnarray\*?\}(.*?)\\end\{eqnarray\*?\}", "display"),
+        ]
+
     def extract_equations(self, markdown: str) -> List[Equation]:
-        """Extract equations with context from markdown text."""
+        """Extract equations from markdown text."""
+        equations = []
+
         try:
-            equations = []
-            
-            # Split markdown into lines for context tracking
-            lines = markdown.split('\n')
-            current_line = 0
-            
             # Process each type of equation
-            equations.extend(self._extract_display_math(markdown, lines))
-            equations.extend(self._extract_inline_math(lines))
-            equations.extend(self._extract_numbered_equations(lines))
-            
-            logger.info(SUCCESS_MESSAGES["equations_found"].format(
-                count=len(equations)
-            ))
-            
-            return equations
-            
-        except Exception as e:
-            logger.error(ERROR_MESSAGES["extraction_failed"].format(
-                step="equations",
-                error=str(e)
-            ))
-            return []
-            
-    def _extract_context(self, lines: List[str], line_number: int, window: int = 2) -> str:
-        """Extract context around an equation."""
-        start = max(0, line_number - window)
-        end = min(len(lines), line_number + window + 1)
-        return '\n'.join(lines[start:end]).strip()
-        
-    def _extract_display_math(self, markdown: str, lines: List[str]) -> List[Equation]:
-        """Extract display math equations ($$ ... $$)."""
-        equations = []
-        matches = re.finditer(self.DISPLAY_MATH, markdown, re.MULTILINE | re.DOTALL)
-        for match in matches:
-            content = match.group(1).strip()
-            # Find line number by counting newlines before match
-            line_number = markdown[:match.start()].count('\n')
-            equations.append(Equation(
-                content=content,
-                context=self._extract_context(lines, line_number),
-                location={"line": line_number + 1, "start": match.start(), "end": match.end()}
-            ))
-        return equations
-        
-    def _extract_inline_math(self, lines: List[str]) -> List[Equation]:
-        """Extract inline math equations ($ ... $)."""
-        equations = []
-        for i, line in enumerate(lines):
-            matches = re.finditer(self.INLINE_MATH, line)
-            for match in matches:
-                content = match.group(1).strip()
-                if len(content) > 5:  # Skip very short inline math
-                    equations.append(Equation(
+            for pattern, eq_type in self.patterns:
+                for match in re.finditer(pattern, markdown, re.DOTALL):
+                    content = match.group(1).strip()
+                    if not content:
+                        continue
+
+                    # Get equation context
+                    start_pos = match.start()
+                    end_pos = match.end()
+                    context = self._get_equation_context(markdown, start_pos, end_pos)
+
+                    # Extract symbols
+                    symbols = self._extract_symbols(content)
+
+                    # Create equation object
+                    equation = Equation(
                         content=content,
-                        context=self._extract_context(lines, i),
-                        location={"line": i + 1, "start": match.start(), "end": match.end()}
-                    ))
-        return equations
-        
-    def _extract_numbered_equations(self, lines: List[str]) -> List[Equation]:
-        """Extract numbered equations (\begin{equation} ... \end{equation})."""
-        equations = []
-        combined_text = '\n'.join(lines)
-        matches = re.finditer(self.NUMBERED_MATH, combined_text)
-        
-        for match in matches:
-            content = match.group(1).strip()
-            # Find line number by counting newlines before match
-            line_number = combined_text[:match.start()].count('\n')
-            
-            # Try to find equation number
-            eq_num_match = re.search(r'\\label{([^}]+)}', content)
-            equation_number = eq_num_match.group(1) if eq_num_match else None
-            
-            # Clean content by removing labels
-            content = re.sub(r'\\label{[^}]+}', '', content).strip()
-            
-            equations.append(Equation(
-                content=content,
-                context=self._extract_context(lines, line_number),
-                equation_number=equation_number,
-                location={"line": line_number + 1, "start": match.start(), "end": match.end()}
-            ))
-            
-        return equations 
+                        context=context,
+                        symbols=symbols,
+                        equation_type=eq_type,
+                        location={"start": start_pos, "end": end_pos},
+                    )
+                    equations.append(equation)
+
+            return equations
+
+        except Exception as e:
+            print(f"Error extracting equations: {str(e)}")
+            return []
+
+    def _get_equation_context(self, text: str, start_pos: int, end_pos: int, context_size: int = 100) -> str:
+        """Get surrounding context for an equation."""
+        # Get context before equation
+        context_start = max(0, start_pos - context_size)
+        before_context = text[context_start:start_pos].strip()
+
+        # Get context after equation
+        context_end = min(len(text), end_pos + context_size)
+        after_context = text[end_pos:context_end].strip()
+
+        # Combine contexts
+        return f"{before_context} ... {after_context}"
+
+    def _extract_symbols(self, equation: str) -> List[Symbol]:
+        """Extract mathematical symbols from equation."""
+        symbols = []
+
+        # Common mathematical symbols
+        greek_letters = [
+            "alpha",
+            "beta",
+            "gamma",
+            "delta",
+            "epsilon",
+            "zeta",
+            "eta",
+            "theta",
+            "iota",
+            "kappa",
+            "lambda",
+            "mu",
+            "nu",
+            "xi",
+            "omicron",
+            "pi",
+            "rho",
+            "sigma",
+            "tau",
+            "upsilon",
+            "phi",
+            "chi",
+            "psi",
+            "omega",
+        ]
+
+        operators = [
+            "sum",
+            "prod",
+            "int",
+            "oint",
+            "partial",
+            "nabla",
+            "infty",
+            "pm",
+            "mp",
+            "times",
+            "div",
+            "cdot",
+            "equiv",
+            "approx",
+            "propto",
+        ]
+
+        # Look for Greek letters
+        for letter in greek_letters:
+            pattern = rf"\\{letter}\b"
+            if re.search(pattern, equation):
+                symbols.append(Symbol(symbol=f"\\{letter}", type="greek", latex_command=f"\\{letter}"))
+
+        # Look for operators
+        for op in operators:
+            pattern = rf"\\{op}\b"
+            if re.search(pattern, equation):
+                symbols.append(Symbol(symbol=f"\\{op}", type="operator", latex_command=f"\\{op}"))
+
+        return symbols

@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "lightwriter_cli"
+name = "lightwriter"
 version = "0.1.0"
-description = "CLI tool for processing academic papers"
+description = "Web application tool for processing and writing academic papers"
 requires-python = ">=3.11"
 dependencies = [
     # Core packages
@@ -20,14 +20,16 @@ dependencies = [
     "aioboto3",
     "ruff",
     "aiohttp",  # For async HTTP requests
+    "aiofiles>=23.2.1",  # For async file operations
+    "pydantic>=2.5.0",  # For enhanced data validation
+    "asyncio",  # For async/await support
+    "orjson",  # Fast JSON parsing
 
     "sentence-transformers",
     "scikit-learn",
     "numpy",
     
     # PDF processing
-    "PyMuPDF",
-    "PyPDF2",
     "pdf2doi",
     "crossrefapi",
     "scholarly",
@@ -46,11 +48,6 @@ dependencies = [
     "graphviz",
     "pydot",
     "pyvis",
-
-    # CLI
-    "typer",
-    "questionary",
-    "rich",
     
     # Development
     "python-dotenv",
@@ -58,9 +55,11 @@ dependencies = [
     "pytest",
     "pytest-cov",
     "pytest-asyncio",  # For async tests
+    "pytest-timeout",  # For test timeouts
     "coverage",
     "beautifulsoup4",
     "mypy", # for static type checking
+    "types-aiofiles",  # Type stubs for aiofiles
 ]
 
 
@@ -72,20 +71,54 @@ python_functions = ["test_*"]
 addopts = "-v --tb=short"
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"  # Set default fixture loop scope
+timeout = 300  # Global timeout for tests in seconds
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"] 
 
 [tool.ruff]
 line-length = 120
+target-version = "py311"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+]
 
 [tool.coverage.run]
 source = ["src"]
 branch = true
+concurrency = ["asyncio"]
 
 [tool.coverage.report]
 exclude_lines = [
     "pragma: no cover",
     "def __repr__",
-    "raise NotImplementedError"
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "pass",
 ]
+show_missing = true
+fail_under = 80
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true

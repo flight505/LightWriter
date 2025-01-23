@@ -2,678 +2,653 @@ Citations Analysis for Chen et al. - 2023 - TSMixer An All-MLP Architecture for 
 ================================================================================
 
 Total Citations Found: 86
-Unique References: 39
+Unique References: 32
+
+Validation Results:
+--------------------------------------------------------------------------------
+Citation Format Valid: True
+Reference Linking Valid: False
+
+Citation Types Distribution:
+- numeric: 12
+- author-year: 74
 
 Citation Details:
 --------------------------------------------------------------------------------
 
 1. Citation: (116)
    Type: numeric
-   Context: Probabilistic and Neural Time Series Modeling in Python. *Journal of Machine Learning Research*, 21(116):1–6, 2020. URL http://jmlr.org/papers/v21/ 19-820.html.
-- Joos-Hendrik Böse, Valentin Flunkert, Jan
+   Context: 21(116):1–
+   Reference ID: ref_116
    Normalized: 116
 ----------------------------------------
 
 2. Citation: (12)
    Type: numeric
-   Context: and Yuyang Wang. Probabilistic demand forecasting at scale. *Proceedings of the VLDB Endowment*, 10(12):1694–1705, 2017.
-- George EP Box, Gwilym M Jenkins, Gregory C Reinsel, and Greta M Ljung. *Time ser
+   Context: 10(12):16
+   Reference ID: ref_12
    Normalized: 12
 ----------------------------------------
 
 3. Citation: (3)
    Type: numeric
-   Context: Ramos-Francia. Multi-horizon inflation forecasts using disaggregated data. *Economic Modelling*, 27(3):666–677, 2010.
-- Jaesung Choe, Chunghyun Park, Francois Rameau, Jaesik Park, and In So Kweon. Point
+   Context: 27(3):66
+   Reference ID: ref_3
    Normalized: 3
 ----------------------------------------
 
 4. Citation: (4)
    Type: numeric
-   Context: Springer, 2022.
-- Pascal Courty and Hao Li. Timing of seasonal sales. *The Journal of Business*, 72(4):545–572, 1999.
-- Francesco Fusco, Damian Pascual, and Peter Staar. pnlp-mixer: an efficient all-mlp
+   Context: 72(4):54
+   Reference ID: ref_4
    Normalized: 4
 ----------------------------------------
 
 5. Citation: (1)
    Type: numeric
-   Context: als and trends by exponentially weighted moving averages. *International journal of forecasting*, 20(1):5–10, 2004.
-- Taesung Kim, Jinhee Kim, Yunwon Tae, Cheonbok Park, Jang-Ho Choi, and Jaegul Choo. Re
+   Context: 20(1):5–
+   Reference ID: ref_1
    Normalized: 1
 ----------------------------------------
 
 6. Citation: (1)
    Type: numeric
-   Context: rmittent demand forecasts with neural networks. *International Journal of Production Economics*, 143(1):198–206, 2013.
-- Shiyang Li, Xiaoyong Jin, Yao Xuan, Xiyou Zhou, Wenhu Chen, Yu-Xiang Wang, and Xif
+   Context: 143(1):19
+   Reference ID: ref_1
    Normalized: 1
 ----------------------------------------
 
 7. Citation: (4)
    Type: numeric
-   Context: for interpretable multi-horizon time series forecasting. *International Journal of Forecasting*, 37(4):1748–1764, 2021.
-- Shizhan Liu, Hang Yu, Cong Liao, Jianguo Li, Weiyao Lin, Alex X. Liu, and Schahr
+   Context: 37(4):17
+   Reference ID: ref_4
    Normalized: 4
 ----------------------------------------
 
 8. Citation: (4)
    Type: numeric
-   Context: accuracy competition: Results, findings, and conclusions. *International Journal of Forecasting*, 38(4):1346–1364, 2022. ISSN 0169-2070. doi: https://doi.org/10.1016/j.ijforecast.2021.11.013. Special Iss
+   Context: 38(4):13
+   Reference ID: ref_4
    Normalized: 4
 ----------------------------------------
 
 9. Citation: (3)
    Type: numeric
-   Context: istic forecasting with autoregressive recurrent networks. *International Journal of Forecasting*, 36(3):1181–1191, 2020.
-- Oktai Tatanov, Stanislav Beliaev, and Boris Ginsburg. Mixer-tts: non-autoregress
+   Context: 36(3):11
+   Reference ID: ref_3
    Normalized: 3
 ----------------------------------------
 
 10. Citation: (2)
    Type: numeric
-   Context: work forecasting for seasonal and trend time series. *European journal of operational research*, 160(2):501–514, 2005.
-- Guoqiang Zhang, B Eddy Patuwo, and Michael Y Hu. Forecasting with artificial neura
+   Context: 160(2):50
+   Reference ID: ref_2
    Normalized: 2
 ----------------------------------------
 
 11. Citation: (1)
    Type: numeric
-   Context: g with artificial neural networks:: The state of the art. *International journal of forecasting*, 14(1):35–62, 1998.
-- J Zhang and K Nawata. Multi-step prediction for influenza outbreak by an adjusted lo
+   Context: 14(1):35
+   Reference ID: ref_1
    Normalized: 1
 ----------------------------------------
 
 12. Citation: (7)
    Type: numeric
-   Context: iction for influenza outbreak by an adjusted long short-term memory. *Epidemiology & Infection*, 146(7):809–816, 2018.
-- Tong Zhang. *Mathematical analysis of machine learning algorithms*. Cambridge Univ
+   Context: 146(7):80
+   Reference ID: ref_7
    Normalized: 7
 ----------------------------------------
 
 13. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: fective than univariate models due to their ability to leverage cross-variate information. However, Zeng et al. (2023) revealed that this is not always the case – Transformer-based models can indeed be significantly wo
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: r, Zeng et al. (2023) re
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 14. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: Liu et al., 2022b). Despite the advances in Transformer-based models for multivariate forecasting, Zeng et al. (2023) indeed show the counter-intuitive result that a simple univariate linear model (Category I), which
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: g, Zeng et al. (2023) in
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 15. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: former models by a significant margin on commonly-used long-term forecasting benchmarks. Similarly, Nie et al. (2023) advocate against modeling the cross-variate information and propose a univariate patch Transformer
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: y, Nie et al. (2023) ad
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 16. Citation: Wen et al. (2017)
-   Type: author_year
-   Context: -space models (Rangapuram et al., 2018; Alaa & van der Schaar, 2019; Gu et al., 2022), RNN variants Wen et al. (2017); Salinas et al. (2020), and attention models Lim et al. (2021). Most real-world time-series dataset
-   Normalized: wen et al. 2017
+   Type: author-year
+   Context: ts Wen et al. (2017); S
+   Reference ID: wen_et_al_2017
+   Normalized: wen_et_al_2017
 ----------------------------------------
 
 17. Citation: Salinas et al. (2020)
-   Type: author_year
-   Context: apuram et al., 2018; Alaa & van der Schaar, 2019; Gu et al., 2022), RNN variants Wen et al. (2017); Salinas et al. (2020), and attention models Lim et al. (2021). Most real-world time-series datasets are more aligned with
-   Normalized: salinas et al. 2020
+   Type: author-year
+   Context: ); Salinas et al. (2020), a
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 18. Citation: Lim et al. (2021)
-   Type: author_year
-   Context: 2019; Gu et al., 2022), RNN variants Wen et al. (2017); Salinas et al. (2020), and attention models Lim et al. (2021). Most real-world time-series datasets are more aligned with this setting and that is why these deep
-   Normalized: lim et al. 2021
+   Type: author-year
+   Context: ls Lim et al. (2021). M
+   Reference ID: lim_et_al_2021
+   Normalized: lim_et_al_2021
 ----------------------------------------
 
 19. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: ls over more complex sequential architectures, like Transformers, has been empirically demonstrated Zeng et al. (2023). We first provide theoretical insights on the capacity of linear models which might have been overl
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: ed Zeng et al. (2023). W
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 20. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: window size.
-
-**Differences from conventional deep learning models.** Following the discussions in Zeng et al. (2023) and Nie et al. (2023), our analysis of linear models offers deeper insights into why previous deep
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: in Zeng et al. (2023) an
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 21. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: ences from conventional deep learning models.** Following the discussions in Zeng et al. (2023) and Nie et al. (2023), our analysis of linear models offers deeper insights into why previous deep learning models tend t
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: nd Nie et al. (2023), o
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 22. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: ly considering the positions. This unique property of linear models may help explain the results in Zeng et al. (2023), where no other method was shown to match the performance of the linear model.
-
-**Limitations of th
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: in Zeng et al. (2023), w
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 23. Citation: Zeng et al. (2023)
-   Type: author_year
-   Context: e transformations.
-- **Temporal Projection**: Temporal projection, identical to the linear models inZeng et al. (2023), is a fully-connected layer applied on time domain. They not only learn the temporal patterns but a
-   Normalized: zeng et al. 2023
+   Type: author-year
+   Context: inZeng et al. (2023), i
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 24. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: aining. While the preference between batch normalization and layer normalization is task-dependent, Nie et al. (2023) demonstrates the advantages of batch normalization on common time series datasets. In contrast to t
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: t, Nie et al. (2023) de
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 25. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: ults on the long-term forecasting datasets. The numbers of models marked with "*" are obtained from Nie et al. (2023). The best numbers in each row are shown in **bold** and the second best numbers are underlined. We
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: om Nie et al. (2023). T
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 26. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: l., 2022b; Zhou et al., 2022a; Nie et al., 2023). We set the input length *L* = 512 as suggested in Nie et al. (2023) and evaluate the results for prediction lengths of *T* = {96*,* 192*,* 336*,* 720}. We use the Adam
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: in Nie et al. (2023) an
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 27. Citation: Alexandrov et al. (2020)
-   Type: author_year
-   Context: the-art PatchTST (Nie et al., 2023).
-
-For the M5 dataset, we mostly follow the data processing from Alexandrov et al. (2020). We consider the prediction length of *T* = 28 (same as the competition), and set the input length
-   Normalized: alexandrov et al. 2020
+   Type: author-year
+   Context: om Alexandrov et al. (2020). W
+   Reference ID: alexandrov_et_al_2020
+   Normalized: alexandrov_et_al_2020
 ----------------------------------------
 
 28. Citation: Salinas et al. (2020)
-   Type: author_year
-   Context: ut length to *L* = 35. We optimize log-likelihood of negative binomial distribution as suggested by Salinas et al. (2020). We follow the competition's protocol (Makridakis et al., 2022) to aggregate the predictions at dif
-   Normalized: salinas et al. 2020
+   Type: author-year
+   Context: by Salinas et al. (2020). W
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 29. Citation: Nie et al. (2023)
-   Type: author_year
-   Context: and maintains the similar level of performance as the window size is increased to 720. As noted by Nie et al. (2023), many multivariate Transformer-based models (such as Transformer, Informer, Autoformer, and FEDform
-   Normalized: nie et al. 2023
+   Type: author-year
+   Context: by Nie et al. (2023), m
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 30. Citation: Salinas et al. (2020)
-   Type: author_year
-   Context: ional challenge for prediction. Therefore, we learn negative binomial distributions, as suggested bySalinas et al. (2020), to better fit the distribution.
-
-**Forecast with Historical Features Only** First, we compare TSMi
-   Normalized: salinas et al. 2020
+   Type: author-year
+   Context: bySalinas et al. (2020), t
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 31. Citation: Wu et al. (2021)
-   Type: author_year
-   Context: Weather, Electricity, and Traffic), we use publicly-available data that have been pre-processed by Wu et al. (2021), and we follow experimental settings used in recent papers (Liu et al., 2022b; Zhou et al., 2022a;
-   Normalized: wu et al. 2021
+   Type: author-year
+   Context: by Wu et al. (2021), a
+   Reference ID: wu_et_al_2021
+   Normalized: wu_et_al_2021
 ----------------------------------------
 
 32. Citation: (Box et al., 1970)
-   Type: author_year
-   Context: re information, e.g., product categories and promotional events.
-
-Traditional models, such as ARIMA (Box et al., 1970), are designed for univariate time series, where only temporal information is available. Therefore,
-   Normalized: box et al., 1970
+   Type: author-year
+   Context: MA (Box et al., 1970), a
+   Reference ID: box_et_al_1970
+   Normalized: box_et_al_1970
 ----------------------------------------
 
 33. Citation: (Wu et al., 2021)
-   Type: author_year
-   Context: oit cross-variate information.
-
-We evaluate TSMixer on commonly used long-term forecasting datasets (Wu et al., 2021) where univariate models have outperformed multivariate models. Our ablation study demonstrates the
-   Normalized: wu et al., 2021
+   Type: author-year
+   Context: ts (Wu et al., 2021) wh
+   Reference ID: wu_et_al_2021
+   Normalized: wu_et_al_2021
 ----------------------------------------
 
 34. Citation: (Makridakis et al., 2022)
-   Type: author_year
-   Context: ate TSMixer on the challenging M5 benchmark, a large-scale retail dataset used in the M-competition (Makridakis et al., 2022). M5 contains crucial cross-variate interactions such as sell prices (Makridakis et al., 2022). The
-   Normalized: makridakis et al., 2022
+   Type: author-year
+   Context: on (Makridakis et al., 2022). M
+   Reference ID: makridakis_et_al_2022
+   Normalized: makridakis_et_al_2022
 ----------------------------------------
 
 35. Citation: (Makridakis et al., 2022)
-   Type: author_year
-   Context: ition (Makridakis et al., 2022). M5 contains crucial cross-variate interactions such as sell prices (Makridakis et al., 2022). The results show that cross-variate information indeed brings significant improvement, and TSMixer
-   Normalized: makridakis et al., 2022
+   Type: author-year
+   Context: es (Makridakis et al., 2022). T
+   Reference ID: makridakis_et_al_2022
+   Normalized: makridakis_et_al_2022
 ----------------------------------------
 
 36. Citation: (Box et al., 1970)
-   Type: author_year
-   Context: cross-variate information auxiliary features |  | Models |
-|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |
-| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |
-|  |  |  | Pa
-   Normalized: box et al., 1970
+   Type: author-year
+   Context: MA (Box et al., 1970) |
+   Reference ID: box_et_al_1970
+   Normalized: box_et_al_1970
 ----------------------------------------
 
 37. Citation: (Zeng et al., 2023)
-   Type: author_year
-   Context: | Models |
-|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |
-| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |
-|  |  |  | PatchTST (Nie et al., 2023) |  |
-|  |  |  | Informer
-   Normalized: zeng et al., 2023
+   Type: author-year
+   Context: ar (Zeng et al., 2023) |
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 38. Citation: (Oreshkin et al., 2020)
-   Type: author_year
-   Context: variateness) | ARIMA (Box et al., 1970) |  |
-| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |
-|  |  |  | PatchTST (Nie et al., 2023) |  |
-|  |  |  | Informer (Zhou et al., 2021) |  |
-|  |  |
-   Normalized: oreshkin et al., 2020
+   Type: author-year
+   Context: TS (Oreshkin et al., 2020) |
+   Reference ID: oreshkin_et_al_2020
+   Normalized: oreshkin_et_al_2020
 ----------------------------------------
 
 39. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |
-|  |  |  | PatchTST (Nie et al., 2023) |  |
-|  |  |  | Informer (Zhou et al., 2021) |  |
-|  |  |  | Autoformer (Wu et al., 2021) |  |
-|  |
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: ST (Nie et al., 2023) |
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 40. Citation: (Zhou et al., 2021)
-   Type: author_year
-   Context: | N-BEATS (Oreshkin et al., 2020) |
-|  |  |  | PatchTST (Nie et al., 2023) |  |
-|  |  |  | Informer (Zhou et al., 2021) |  |
-|  |  |  | Autoformer (Wu et al., 2021) |  |
-|  |  |  | Pyraformer (Liu et al., 2022a) |  |
-|
-   Normalized: zhou et al., 2021
+   Type: author-year
+   Context: er (Zhou et al., 2021) |
+   Reference ID: zhou_et_al_2021
+   Normalized: zhou_et_al_2021
 ----------------------------------------
 
 41. Citation: (Wu et al., 2021)
-   Type: author_year
-   Context: PatchTST (Nie et al., 2023) |  |
-|  |  |  | Informer (Zhou et al., 2021) |  |
-|  |  |  | Autoformer (Wu et al., 2021) |  |
-|  |  |  | Pyraformer (Liu et al., 2022a) |  |
-| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |
-   Normalized: wu et al., 2021
+   Type: author-year
+   Context: er (Wu et al., 2021) |
+   Reference ID: wu_et_al_2021
+   Normalized: wu_et_al_2021
 ----------------------------------------
 
 42. Citation: (Liu et al., 2022a)
-   Type: author_year
-   Context: nformer (Zhou et al., 2021) |  |
-|  |  |  | Autoformer (Wu et al., 2021) |  |
-|  |  |  | Pyraformer (Liu et al., 2022a) |  |
-| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |
-|  |  |  |  | NS-Transformer (Liu et al., 2
-   Normalized: liu et al., 2022a
+   Type: author-year
+   Context: er (Liu et al., 2022a) |
+   Reference ID: liu_et_al_2022a
+   Normalized: liu_et_al_2022a
 ----------------------------------------
 
 43. Citation: (Zhou et al., 2022b)
-   Type: author_year
-   Context: rmer (Wu et al., 2021) |  |
-|  |  |  | Pyraformer (Liu et al., 2022a) |  |
-| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |
-|  |  |  |  | NS-Transformer (Liu et al., 2022b) |
-|  |  |  | FiLM (Zhou et al., 2022a) |  |
-|
-   Normalized: zhou et al., 2022b
+   Type: author-year
+   Context: er (Zhou et al., 2022b) |
+   Reference ID: zhou_et_al_2022b
+   Normalized: zhou_et_al_2022b
 ----------------------------------------
 
 44. Citation: (Liu et al., 2022b)
-   Type: author_year
-   Context: et al., 2022a) |  |
-| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |
-|  |  |  |  | NS-Transformer (Liu et al., 2022b) |
-|  |  |  | FiLM (Zhou et al., 2022a) |  |
-|  |  |  | TSMixer (this work) |  |
-|  |  |  | MQRNN (W
-   Normalized: liu et al., 2022b
+   Type: author-year
+   Context: er (Liu et al., 2022b) |
+   Reference ID: liu_et_al_2022b
+   Normalized: liu_et_al_2022b
 ----------------------------------------
 
 45. Citation: (Zhou et al., 2022a)
-   Type: author_year
-   Context: former (Zhou et al., 2022b) |  |
-|  |  |  |  | NS-Transformer (Liu et al., 2022b) |
-|  |  |  | FiLM (Zhou et al., 2022a) |  |
-|  |  |  | TSMixer (this work) |  |
-|  |  |  | MQRNN (Wen et al., 2017) |  |
-| III | ✔ | ✔ | ✔
-   Normalized: zhou et al., 2022a
+   Type: author-year
+   Context: LM (Zhou et al., 2022a) |
+   Reference ID: zhou_et_al_2022a
+   Normalized: zhou_et_al_2022a
 ----------------------------------------
 
 46. Citation: (Wen et al., 2017)
-   Type: author_year
-   Context: b) |
-|  |  |  | FiLM (Zhou et al., 2022a) |  |
-|  |  |  | TSMixer (this work) |  |
-|  |  |  | MQRNN (Wen et al., 2017) |  |
-| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |
-|  |  |  |  | DeepAR (Salinas et al., 202
-   Normalized: wen et al., 2017
+   Type: author-year
+   Context: NN (Wen et al., 2017) |
+   Reference ID: wen_et_al_2017
+   Normalized: wen_et_al_2017
 ----------------------------------------
 
 47. Citation: (Rangapuram et al., 2018)
-   Type: author_year
-   Context: |  |  | TSMixer (this work) |  |
-|  |  |  | MQRNN (Wen et al., 2017) |  |
-| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |
-|  |  |  |  | DeepAR (Salinas et al., 2020) |
-|  |  |  |  | TFT (Lim et al., 2021) |
-|  |  |  |
-   Normalized: rangapuram et al., 2018
+   Type: author-year
+   Context: SM (Rangapuram et al., 2018) |
+   Reference ID: rangapuram_et_al_2018
+   Normalized: rangapuram_et_al_2018
 ----------------------------------------
 
 48. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: N (Wen et al., 2017) |  |
-| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |
-|  |  |  |  | DeepAR (Salinas et al., 2020) |
-|  |  |  |  | TFT (Lim et al., 2021) |
-|  |  |  |  | TSMixer-Ext (this work) |
-
-- We propose TSMi
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: AR (Salinas et al., 2020) |
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 49. Citation: (Lim et al., 2021)
-   Type: author_year
-   Context: | DSSM (Rangapuram et al., 2018) |
-|  |  |  |  | DeepAR (Salinas et al., 2020) |
-|  |  |  |  | TFT (Lim et al., 2021) |
-|  |  |  |  | TSMixer-Ext (this work) |
-
-- We propose TSMixer, an innovative architecture which r
-   Normalized: lim et al., 2021
+   Type: author-year
+   Context: FT (Lim et al., 2021) |
+   Reference ID: lim_et_al_2021
+   Normalized: lim_et_al_2021
 ----------------------------------------
 
 50. Citation: (Vaswani et al., 2017)
-   Type: author_year
-   Context: or this scenario because of their superior performance in modeling long and complex sequential data (Vaswani et al., 2017). Various variants of Transformers have been proposed to further improve efficiency and accuracy. In
-   Normalized: vaswani et al., 2017
+   Type: author-year
+   Context: ta (Vaswani et al., 2017). V
+   Reference ID: vaswani_et_al_2017
+   Normalized: vaswani_et_al_2017
 ----------------------------------------
 
 51. Citation: (Zhou et al., 2021)
-   Type: author_year
-   Context: us variants of Transformers have been proposed to further improve efficiency and accuracy. Informer (Zhou et al., 2021) and Autoformer (Wu et al., 2021) tackle the efficiency bottleneck with different attention designs
-   Normalized: zhou et al., 2021
+   Type: author-year
+   Context: er (Zhou et al., 2021) an
+   Reference ID: zhou_et_al_2021
+   Normalized: zhou_et_al_2021
 ----------------------------------------
 
 52. Citation: (Wu et al., 2021)
-   Type: author_year
-   Context: en proposed to further improve efficiency and accuracy. Informer (Zhou et al., 2021) and Autoformer (Wu et al., 2021) tackle the efficiency bottleneck with different attention designs costing less memory usage for lon
-   Normalized: wu et al., 2021
+   Type: author-year
+   Context: er (Wu et al., 2021) ta
+   Reference ID: wu_et_al_2021
+   Normalized: wu_et_al_2021
 ----------------------------------------
 
 53. Citation: (Zhou et al., 2022b)
-   Type: author_year
-   Context: eck with different attention designs costing less memory usage for long-term forecasting. FEDformer (Zhou et al., 2022b) and FiLM (Zhou et al., 2022a) decompose the sequences using Fast Fourier Transformation for better
-   Normalized: zhou et al., 2022b
+   Type: author-year
+   Context: er (Zhou et al., 2022b) an
+   Reference ID: zhou_et_al_2022b
+   Normalized: zhou_et_al_2022b
 ----------------------------------------
 
 54. Citation: (Zhou et al., 2022a)
-   Type: author_year
-   Context: esigns costing less memory usage for long-term forecasting. FEDformer (Zhou et al., 2022b) and FiLM (Zhou et al., 2022a) decompose the sequences using Fast Fourier Transformation for better extraction of long-term inform
-   Normalized: zhou et al., 2022a
+   Type: author-year
+   Context: LM (Zhou et al., 2022a) de
+   Reference ID: zhou_et_al_2022a
+   Normalized: zhou_et_al_2022a
 ----------------------------------------
 
 55. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: ls have achieved great success in various applications and are widely used in industry (e.g. DeepAR (Salinas et al., 2020) of AWS SageMaker and TFT (Lim et al., 2021) of Google Cloud Vertex). One drawback of these models i
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: AR (Salinas et al., 2020) of
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 56. Citation: (Lim et al., 2021)
-   Type: author_year
-   Context: ations and are widely used in industry (e.g. DeepAR (Salinas et al., 2020) of AWS SageMaker and TFT (Lim et al., 2021) of Google Cloud Vertex). One drawback of these models is their complexity, particularly when compar
-   Normalized: lim et al., 2021
+   Type: author-year
+   Context: FT (Lim et al., 2021) of
+   Reference ID: lim_et_al_2021
+   Normalized: lim_et_al_2021
 ----------------------------------------
 
 57. Citation: (Tolstikhin et al., 2021)
-   Type: author_year
-   Context: the proposed TSMixer in a way resembles the well-known MLP Mixer architecture, from computer vision (Tolstikhin et al., 2021). Mixer models have also been applied to text (Fusco et al., 2022), speech (Tatanov et al., 2022), n
-   Normalized: tolstikhin et al., 2021
+   Type: author-year
+   Context: on (Tolstikhin et al., 2021). M
+   Reference ID: tolstikhin_et_al_2021
+   Normalized: tolstikhin_et_al_2021
 ----------------------------------------
 
 58. Citation: (Fusco et al., 2022)
-   Type: author_year
-   Context: ecture, from computer vision (Tolstikhin et al., 2021). Mixer models have also been applied to text (Fusco et al., 2022), speech (Tatanov et al., 2022), network traffic (Zheng et al., 2022) and point cloud (Choe et al.,
-   Normalized: fusco et al., 2022
+   Type: author-year
+   Context: xt (Fusco et al., 2022), s
+   Reference ID: fusco_et_al_2022
+   Normalized: fusco_et_al_2022
 ----------------------------------------
 
 59. Citation: (Tatanov et al., 2022)
-   Type: author_year
-   Context: (Tolstikhin et al., 2021). Mixer models have also been applied to text (Fusco et al., 2022), speech (Tatanov et al., 2022), network traffic (Zheng et al., 2022) and point cloud (Choe et al., 2022). Yet, to the best of our
-   Normalized: tatanov et al., 2022
+   Type: author-year
+   Context: ch (Tatanov et al., 2022), n
+   Reference ID: tatanov_et_al_2022
+   Normalized: tatanov_et_al_2022
 ----------------------------------------
 
 60. Citation: (Zheng et al., 2022)
-   Type: author_year
-   Context: have also been applied to text (Fusco et al., 2022), speech (Tatanov et al., 2022), network traffic (Zheng et al., 2022) and point cloud (Choe et al., 2022). Yet, to the best of our knowledge, the use of an MLP Mixer bas
-   Normalized: zheng et al., 2022
+   Type: author-year
+   Context: ic (Zheng et al., 2022) an
+   Reference ID: zheng_et_al_2022
+   Normalized: zheng_et_al_2022
 ----------------------------------------
 
 61. Citation: (Choe et al., 2022)
-   Type: author_year
-   Context: et al., 2022), speech (Tatanov et al., 2022), network traffic (Zheng et al., 2022) and point cloud (Choe et al., 2022). Yet, to the best of our knowledge, the use of an MLP Mixer based architecture for time series fore
-   Normalized: choe et al., 2022
+   Type: author-year
+   Context: ud (Choe et al., 2022). Y
+   Reference ID: choe_et_al_2022
+   Normalized: choe_et_al_2022
 ----------------------------------------
 
 62. Citation: (Zhang, 2023)
-   Type: author_year
-   Context: ptimal. The analysis beyond Lipschitz cases could be challenging and out of the scope of this paper (Zhang, 2023), so we leave the analysis for more complex cases for the future work. Nevertheless, the analysis mo
-   Normalized: zhang, 2023
+   Type: author-year
+   Context: er (Zhang, 2023), s
+   Reference ID: zhang_2023
+   Normalized: zhang_2023
 ----------------------------------------
 
 63. Citation: (Tolstikhin et al., 2021)
-   Type: author_year
-   Context: of the time steps. This resulting model is akin to the MLP-Mixer architecture from computer vision (Tolstikhin et al., 2021), with time-domain and feature-domain
-
-![](_page_6_Figure_1.jpeg)
-
-Figure 2: Illustrations of time-s
-   Normalized: tolstikhin et al., 2021
+   Type: author-year
+   Context: on (Tolstikhin et al., 2021), w
+   Reference ID: tolstikhin_et_al_2021
+   Normalized: tolstikhin_et_al_2021
 ----------------------------------------
 
 64. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: ters of a target distribution, such as negative binomial distribution for retail demand forecasting (Salinas et al., 2020). We slightly modify mixing layers to better handle M5 dataset, as described in Appendix B.
-
-#### **
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: ng (Salinas et al., 2020). W
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 65. Citation: (Makridakis et al., 2022)
-   Type: author_year
-   Context: pular multivariate long-term forecasting benchmarks and a large-scale real-world retail dataset, M5 (Makridakis et al., 2022). The long-term forecasting datasets cover various
-
-![](_page_8_Figure_1.jpeg)
-
-Figure 4: TSMixer wi
-   Normalized: makridakis et al., 2022
+   Type: author-year
+   Context: M5 (Makridakis et al., 2022). T
+   Reference ID: makridakis_et_al_2022
+   Normalized: makridakis_et_al_2022
 ----------------------------------------
 
 66. Citation: (Kim et al., 2022)
-   Type: author_year
-   Context: and mean absolute error (MAE) as the evaluation metrics. We apply reversible instance normalization (Kim et al., 2022) to ensure a fair comparison with the state-of-the-art PatchTST (Nie et al., 2023).
-
-For the M5 data
-   Normalized: kim et al., 2022
+   Type: author-year
+   Context: on (Kim et al., 2022) to
+   Reference ID: kim_et_al_2022
+   Normalized: kim_et_al_2022
 ----------------------------------------
 
 67. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: nce normalization (Kim et al., 2022) to ensure a fair comparison with the state-of-the-art PatchTST (Nie et al., 2023).
-
-For the M5 dataset, we mostly follow the data processing from Alexandrov et al. (2020). We consid
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: ST (Nie et al., 2023).
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 68. Citation: (Makridakis et al., 2022)
-   Type: author_year
-   Context: e binomial distribution as suggested by Salinas et al. (2020). We follow the competition's protocol (Makridakis et al., 2022) to aggregate the predictions at different levels and evaluate them using the weighted root mean squ
-   Normalized: makridakis et al., 2022
+   Type: author-year
+   Context: ol (Makridakis et al., 2022) to
+   Reference ID: makridakis_et_al_2022
+   Normalized: makridakis_et_al_2022
 ----------------------------------------
 
 69. Citation: (Zhou et al., 2022b)
-   Type: author_year
-   Context: erm forecasting tasks, we compare TSMixer to state-of-the-art multivariate models such as FEDformer (Zhou et al., 2022b), Autoformer (Wu et al., 2021), Informer (Zhou et al., 2021), and univariate models like PatchTST (N
-   Normalized: zhou et al., 2022b
+   Type: author-year
+   Context: er (Zhou et al., 2022b), A
+   Reference ID: zhou_et_al_2022b
+   Normalized: zhou_et_al_2022b
 ----------------------------------------
 
 70. Citation: (Wu et al., 2021)
-   Type: author_year
-   Context: TSMixer to state-of-the-art multivariate models such as FEDformer (Zhou et al., 2022b), Autoformer (Wu et al., 2021), Informer (Zhou et al., 2021), and univariate models like PatchTST (Nie et al., 2023) and LTSF-Line
-   Normalized: wu et al., 2021
+   Type: author-year
+   Context: er (Wu et al., 2021), I
+   Reference ID: wu_et_al_2021
+   Normalized: wu_et_al_2021
 ----------------------------------------
 
 71. Citation: (Zhou et al., 2021)
-   Type: author_year
-   Context: multivariate models such as FEDformer (Zhou et al., 2022b), Autoformer (Wu et al., 2021), Informer (Zhou et al., 2021), and univariate models like PatchTST (Nie et al., 2023) and LTSF-Linear (Zeng et al., 2023). Additi
-   Normalized: zhou et al., 2021
+   Type: author-year
+   Context: er (Zhou et al., 2021), a
+   Reference ID: zhou_et_al_2021
+   Normalized: zhou_et_al_2021
 ----------------------------------------
 
 72. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: b), Autoformer (Wu et al., 2021), Informer (Zhou et al., 2021), and univariate models like PatchTST (Nie et al., 2023) and LTSF-Linear (Zeng et al., 2023). Additionally, we include TFT (Lim et al., 2021), a deep learni
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: ST (Nie et al., 2023) an
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 73. Citation: (Zeng et al., 2023)
-   Type: author_year
-   Context: nformer (Zhou et al., 2021), and univariate models like PatchTST (Nie et al., 2023) and LTSF-Linear (Zeng et al., 2023). Additionally, we include TFT (Lim et al., 2021), a deep learning-based model that considers auxili
-   Normalized: zeng et al., 2023
+   Type: author-year
+   Context: ar (Zeng et al., 2023). A
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 74. Citation: (Lim et al., 2021)
-   Type: author_year
-   Context: like PatchTST (Nie et al., 2023) and LTSF-Linear (Zeng et al., 2023). Additionally, we include TFT (Lim et al., 2021), a deep learning-based model that considers auxiliary information, as a baseline to understand the
-   Normalized: lim et al., 2021
+   Type: author-year
+   Context: FT (Lim et al., 2021), a
+   Reference ID: lim_et_al_2021
+   Normalized: lim_et_al_2021
 ----------------------------------------
 
 75. Citation: (Zeng et al., 2023)
-   Type: author_year
-   Context: e-mixing is not beneficial for these benchmarks. These observations are consistent with findings in (Zeng et al., 2023) and (Nie et al., 2023). The results suggest that cross-variate information may be less significant
-   Normalized: zeng et al., 2023
+   Type: author-year
+   Context: in (Zeng et al., 2023) an
+   Reference ID: zeng_et_al_2023
+   Normalized: zeng_et_al_2023
 ----------------------------------------
 
 76. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: al for these benchmarks. These observations are consistent with findings in (Zeng et al., 2023) and (Nie et al., 2023). The results suggest that cross-variate information may be less significant in these datasets, indi
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: nd (Nie et al., 2023). T
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 77. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: tance of modeling crossvariate information on some forecasting tasks, as opposed to the argument in (Nie et al., 2023). Furthermore, TSMixer substantially outperforms FEDformer, a state-of-the-art multivariate model.
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: in (Nie et al., 2023). F
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 78. Citation: (Lim et al., 2021)
-   Type: author_year
-   Context: xiliary information, we compare TSMixer against established time series forecasting algorithms, TFT (Lim et al., 2021) and DeepAR (Salinas et al., 2020). Table 5 shows that with auxiliary features TSMixer outperforms a
-   Normalized: lim et al., 2021
+   Type: author-year
+   Context: FT (Lim et al., 2021) an
+   Reference ID: lim_et_al_2021
+   Normalized: lim_et_al_2021
 ----------------------------------------
 
 79. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: e TSMixer against established time series forecasting algorithms, TFT (Lim et al., 2021) and DeepAR (Salinas et al., 2020). Table 5 shows that with auxiliary features TSMixer outperforms all other baselines by a significan
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: AR (Salinas et al., 2020). T
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 80. Citation: (Kim et al., 2022)
-   Type: author_year
-   Context: or post-processing. For long-term forecasting datasets, we apply reversible instance normalization (Kim et al., 2022) to ensure a fair comparison with the state-of-the-art results. In M5, we independently scale the sa
-   Normalized: kim et al., 2022
+   Type: author-year
+   Context: on (Kim et al., 2022) to
+   Reference ID: kim_et_al_2022
+   Normalized: kim_et_al_2022
 ----------------------------------------
 
 81. Citation: (Nie et al., 2023)
-   Type: author_year
-   Context: level normalization: We apply batch normalization on long-term forecasting datasets as suggested in (Nie et al., 2023) and apply layer normalization on M5 as described below.
-
-#### **B.2 Differences between TSMixer and
-   Normalized: nie et al., 2023
+   Type: author-year
+   Context: in (Nie et al., 2023) an
+   Reference ID: nie_et_al_2023
+   Normalized: nie_et_al_2023
 ----------------------------------------
 
 82. Citation: (Xiong et al., 2020)
-   Type: author_year
-   Context: layers in TSMixer-Ext to better fit M5. We consider post-normalization rather than prenormalization (Xiong et al., 2020) because pre-normalization may lead to NaN when the scale of input is too large. Furthermore, we app
-   Normalized: xiong et al., 2020
+   Type: author-year
+   Context: on (Xiong et al., 2020) be
+   Reference ID: xiong_et_al_2020
+   Normalized: xiong_et_al_2020
 ----------------------------------------
 
 83. Citation: (Xiong et al., 2020)
-   Type: author_year
-   Context: H* is a hyper-parameter indicating the hidden size. Another modification is using pre-normalization (Xiong et al., 2020) instead of post-normalization in residual blocks to keep the input scale.
-
-#### **B.3.3 Extended TS
-   Normalized: xiong et al., 2020
+   Type: author-year
+   Context: on (Xiong et al., 2020) in
+   Reference ID: xiong_et_al_2020
+   Normalized: xiong_et_al_2020
 ----------------------------------------
 
 84. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: ility distribution (e.g. negative binomial distribution that is commonly used for demand prediction (Salinas et al., 2020)).
-
-## **C Experimental Setup**
-
-#### **C.1 Long-term time series forecasting datasets**
-
-For the lo
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: on (Salinas et al., 2020)).
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 85. Citation: (Alexandrov et al., 2020)
-   Type: author_year
-   Context: check the details about the competition and the dataset. We refer to the example script in GluonTS (Alexandrov et al., 2020)2 and the repository of the third place solution3 in the competition to implement our basic feature
-   Normalized: alexandrov et al., 2020
+   Type: author-year
+   Context: TS (Alexandrov et al., 2020)2 a
+   Reference ID: alexandrov_et_al_2020
+   Normalized: alexandrov_et_al_2020
 ----------------------------------------
 
 86. Citation: (Salinas et al., 2020)
-   Type: author_year
-   Context: se models if necessary to optimize the negative binomial distribution, as suggested by DeepAR paper (Salinas et al., 2020). We train each model with a maximum 300 epochs and employ early stopping if the validation loss is
-   Normalized: salinas et al., 2020
+   Type: author-year
+   Context: er (Salinas et al., 2020). W
+   Reference ID: salinas_et_al_2020
+   Normalized: salinas_et_al_2020
 ----------------------------------------
 
 Unique References:
 --------------------------------------------------------------------------------
-- 1
-- 116
-- 12
-- 2
-- 3
-- 4
-- 7
-- alexandrov et al. 2020
-- alexandrov et al., 2020
-- box et al., 1970
-- choe et al., 2022
-- fusco et al., 2022
-- kim et al., 2022
-- lim et al. 2021
-- lim et al., 2021
-- liu et al., 2022a
-- liu et al., 2022b
-- makridakis et al., 2022
-- nie et al. 2023
-- nie et al., 2023
-- oreshkin et al., 2020
-- rangapuram et al., 2018
-- salinas et al. 2020
-- salinas et al., 2020
-- tatanov et al., 2022
-- tolstikhin et al., 2021
-- vaswani et al., 2017
-- wen et al. 2017
-- wen et al., 2017
-- wu et al. 2021
-- wu et al., 2021
-- xiong et al., 2020
-- zeng et al. 2023
-- zeng et al., 2023
-- zhang, 2023
-- zheng et al., 2022
-- zhou et al., 2021
-- zhou et al., 2022a
-- zhou et al., 2022b
+- alexandrov_et_al_2020
+- box_et_al_1970
+- choe_et_al_2022
+- fusco_et_al_2022
+- kim_et_al_2022
+- lim_et_al_2021
+- liu_et_al_2022a
+- liu_et_al_2022b
+- makridakis_et_al_2022
+- nie_et_al_2023
+- oreshkin_et_al_2020
+- rangapuram_et_al_2018
+- ref_1
+- ref_116
+- ref_12
+- ref_2
+- ref_3
+- ref_4
+- ref_7
+- salinas_et_al_2020
+- tatanov_et_al_2022
+- tolstikhin_et_al_2021
+- vaswani_et_al_2017
+- wen_et_al_2017
+- wu_et_al_2021
+- xiong_et_al_2020
+- zeng_et_al_2023
+- zhang_2023
+- zheng_et_al_2022
+- zhou_et_al_2021
+- zhou_et_al_2022a
+- zhou_et_al_2022b
