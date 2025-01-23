@@ -1,0 +1,491 @@
+Citations Analysis for Caldas, Soares - 2023 - A Temporal Fusion Transformer for Long-Term Explainable Prediction of Emergency Department Overcrowding-annotated.pdf
+================================================================================
+
+Total Citations Found: 70
+Unique References: 46
+
+Citation Details:
+--------------------------------------------------------------------------------
+
+1. Citation: [21,39]
+   Type: numeric
+   Context: -031-23618-1_5
+
+to organise rotation schedules and diminish waiting times in urgent care facilities [21,39]. When not accounted for, overcrowding can lead to a decrease in the quality of patient care and wor
+   Normalized: 21,39
+----------------------------------------
+
+2. Citation: [5,20]
+   Type: numeric
+   Context: for, overcrowding can lead to a decrease in the quality of patient care and worse clinical outcomes [5,20]. From a macro point of view, the influx in the emergency department combines an expected number of
+   Normalized: 20,5
+----------------------------------------
+
+3. Citation: [20,42]
+   Type: numeric
+   Context: ms, such as common cold, strained muscles, or to deal with problems associated with chronic illness [20,42]. The most serious cases are reasonably constant over time, and, predominantly, people in life threa
+   Normalized: 20,42
+----------------------------------------
+
+4. Citation: [4,19,32]
+   Type: numeric
+   Context: nt patients is Monday, with a smaller number of patients pursuing emergency care during the weekend [4,19,32]. To combine the predictive power of Deep Neural Networks with the explainability usually reserved f
+   Normalized: 19,32,4
+----------------------------------------
+
+5. Citation: [26]
+   Type: numeric
+   Context: ne learning model to predict the influx of nonurgent patients: the Temporal Fusion Transformer (TFT)[26]; and study which variables, time-series or not, had the most impact on the model, and thus which ar
+   Normalized: 26
+----------------------------------------
+
+6. Citation: [10,21]
+   Type: numeric
+   Context: rature Review**
+
+Previous studies have examined the multi-step forecasting of daily patient volumes [10,21]. Most focus is on the use of classical statistical tools for temporal linear regression such as mov
+   Normalized: 10,21
+----------------------------------------
+
+7. Citation: [28]
+   Type: numeric
+   Context: is on the use of classical statistical tools for temporal linear regression such as moving averages [28], and their many extensions, namely ARIMA, SARIMA or VARIMA [3,7,34,40]. In recent years, with the a
+   Normalized: 28
+----------------------------------------
+
+8. Citation: [3,7,34,40]
+   Type: numeric
+   Context: regression such as moving averages [28], and their many extensions, namely ARIMA, SARIMA or VARIMA [3,7,34,40]. In recent years, with the advent of machine learning, newer studies have been conducted that use n
+   Normalized: 3,34,40,7
+----------------------------------------
+
+9. Citation: [21,43]
+   Type: numeric
+   Context: rs, with the advent of machine learning, newer studies have been conducted that use neural networks [21,43], or otherwise other machine learning techniques to tackle the same problem [29,33,37]. From the use
+   Normalized: 21,43
+----------------------------------------
+
+10. Citation: [29,33,37]
+   Type: numeric
+   Context: neural networks [21,43], or otherwise other machine learning techniques to tackle the same problem [29,33,37]. From the use of Feed-forward Neural Networks [21,29], to Recurrent Neural Networks [15,22], 1-D Co
+   Normalized: 29,33,37
+----------------------------------------
+
+11. Citation: [21,29]
+   Type: numeric
+   Context: ning techniques to tackle the same problem [29,33,37]. From the use of Feed-forward Neural Networks [21,29], to Recurrent Neural Networks [15,22], 1-D Convolution Neural Networks [35], and later to Long Shor
+   Normalized: 21,29
+----------------------------------------
+
+12. Citation: [15,22]
+   Type: numeric
+   Context: blem [29,33,37]. From the use of Feed-forward Neural Networks [21,29], to Recurrent Neural Networks [15,22], 1-D Convolution Neural Networks [35], and later to Long Short-Term Unit (LSTM) [15,36], there has
+   Normalized: 15,22
+----------------------------------------
+
+13. Citation: [35]
+   Type: numeric
+   Context: ward Neural Networks [21,29], to Recurrent Neural Networks [15,22], 1-D Convolution Neural Networks [35], and later to Long Short-Term Unit (LSTM) [15,36], there has been a constant advance in the field,
+   Normalized: 35
+----------------------------------------
+
+14. Citation: [15,36]
+   Type: numeric
+   Context: al Networks [15,22], 1-D Convolution Neural Networks [35], and later to Long Short-Term Unit (LSTM) [15,36], there has been a constant advance in the field, from linear models to deep neural network models.
+   Normalized: 15,36
+----------------------------------------
+
+15. Citation: [6,17,21,39]
+   Type: numeric
+   Context: alendar variables (day, day of the week, holidays) have a significant contribution to model results [6,17,21,39]. Weather data, such as temperature and rain, have shown predictive power for ED arrivals with respi
+   Normalized: 17,21,39,6
+----------------------------------------
+
+16. Citation: [29]
+   Type: numeric
+   Context: such as temperature and rain, have shown predictive power for ED arrivals with respiratory problems [29], but in others studies that analysed the whole spectrum of ED visitors, it is either not a signific
+   Normalized: 29
+----------------------------------------
+
+17. Citation: [17,39]
+   Type: numeric
+   Context: r not a significant variable, or it could be replaced by calendar variables, e.g. month of the year [17,39]. This level of covariate interpretability is one of the frequent drawbacks of Neural Networks, alon
+   Normalized: 17,39
+----------------------------------------
+
+18. Citation: [38]
+   Type: numeric
+   Context: dencies in time-series. One specific device that addresses both problems is the Attention Mechanism [38]: simply put, it evaluates long-term dependencies and also represents how each time-step impacts the
+   Normalized: 38
+----------------------------------------
+
+19. Citation: [9,41]
+   Type: numeric
+   Context: res called Transformers, that has shown impressive results in the Natural Language Processing field [9,41]. In the literature, we found only one example that used a Temporal Fusion Transformer model to pred
+   Normalized: 41,9
+----------------------------------------
+
+20. Citation: [31]
+   Type: numeric
+   Context: ion Transformer model to predict Emergency Department (ED) volume in one hospital for one day ahead [31]. While not being the only work that performed only daily predictions [33,37], we find that a longer
+   Normalized: 31
+----------------------------------------
+
+21. Citation: [33,37]
+   Type: numeric
+   Context: ospital for one day ahead [31]. While not being the only work that performed only daily predictions [33,37], we find that a longer forecasting window produces increased value for hospital management and pose
+   Normalized: 33,37
+----------------------------------------
+
+22. Citation: [30]
+   Type: numeric
+   Context: there is visible value added at user level, in the sense that they will get better and faster care [30]. To sustain this claim, we can observe the impact that the number of non-urgent patients has on the
+   Normalized: 30
+----------------------------------------
+
+23. Citation: [6,7]
+   Type: numeric
+   Context: decisions. To the best of our knowledge, few works have worked on such an extended forecast horizon [6,7], with only partial success.
+- **Probability prediction:** besides obtaining an estimate of the most
+   Normalized: 6,7
+----------------------------------------
+
+24. Citation: [27]
+   Type: numeric
+   Context: laces a heavier penalty on negative errors (when the predicted value is higher than the true value) [27]. To overcome that, outliers values very close to zero are removed for this particular metric. To co
+   Normalized: 27
+----------------------------------------
+
+25. Citation: [1,12,21,23,34]
+   Type: numeric
+   Context: ere also applied, namely AutoRegressive Integrated Moving Average (ARIMA) with a seasonal component [1,12,21,23,34], and its multivariate variant Vector AutoRegressive Integrated Moving Average (VARIMA) [23].
+
+Also
+   Normalized: 1,12,21,23,34
+----------------------------------------
+
+26. Citation: [23]
+   Type: numeric
+   Context: 12,21,23,34], and its multivariate variant Vector AutoRegressive Integrated Moving Average (VARIMA) [23].
+
+Also used was the exponential Smoothing algorithm, a simple method that has also shown good resul
+   Normalized: 23
+----------------------------------------
+
+27. Citation: [8]
+   Type: numeric
+   Context: exponential Smoothing algorithm, a simple method that has also shown good results in the literature [8]. Finally, to gauge the performance of common machine learning models, the XGBoost model was used. O
+   Normalized: 8
+----------------------------------------
+
+28. Citation: [24]
+   Type: numeric
+   Context: nce of common machine learning models, the XGBoost model was used. Out of these models, the XGBoost [24] (a Decision Tree Boosting algorithm), is the only model capable of using past and future covariates
+   Normalized: 24
+----------------------------------------
+
+29. Citation: [26]
+   Type: numeric
+   Context: |
+
+**Table 1.** Hyperparameters for TFT model after tuning.
+
+The prediction function is defined as [26]:
+
+$$\hat{y}_{i}(q,t,\tau)=f_{q}(\tau,y_{i,t-k:t},x_{i,t-k:t},s_{i})\tag{5}$$
+
+where ˆy*i*(q, t, τ )
+   Normalized: 26
+----------------------------------------
+
+30. Citation: [26]
+   Type: numeric
+   Context: the expected value, and gain the capacity to define confidence intervals.
+
+Initially introduced by [26], this model instantiated a novel architecture, combining a few mechanisms previously only used sepa
+   Normalized: 26
+----------------------------------------
+
+31. Citation: [16]
+   Type: numeric
+   Context: ng (e.g. in very simple forecasts) the Gating Mechanism, also referred to as Gated Residual Network [16], allows the model to only use non-linear processing when needed;
+- Static Variables encoding to com
+   Normalized: 16
+----------------------------------------
+
+32. Citation: [13,18]
+   Type: numeric
+   Context: ta;
+- Temporal Dependency Processing to capture short-term dependency, with an LSTM encoder-decoder [13,18], and long-term dependency using a Multi-Head Attention mechanism [38]. By an additive aggregation o
+   Normalized: 13,18
+----------------------------------------
+
+33. Citation: [38]
+   Type: numeric
+   Context: th an LSTM encoder-decoder [13,18], and long-term dependency using a Multi-Head Attention mechanism [38]. By an additive aggregation of the different heads, this mechanism gains explainability, as the wei
+   Normalized: 38
+----------------------------------------
+
+34. Citation: [25]
+   Type: numeric
+   Context: t time-step.
+
+To obtain the quantile predictions, a specific loss, the Quantile Loss, is defined as [25]:
+
+$$QL(y,\hat{y},q)=\max\{q(y-\hat{y}),(q-1)(y-\hat{y})\}\tag{6}$$
+
+for each quantile q. The final
+   Normalized: 25
+----------------------------------------
+
+35. Citation: [26]
+   Type: numeric
+   Context: rpretable multi-head attention is used to evaluate the most relevant time-steps. Image adapted from [26].
+
+**Table 2.** Prediction accuracy for various models in the period 24/01/2022–20/02/2022. To evalu
+   Normalized: 26
+----------------------------------------
+
+36. Citation: [21,23]
+   Type: numeric
+   Context: Areas (HRA). The results were encouraging, surpassing other models commonly found in the literature [21,23]. The forecasting of an entire month is seldom done in the literature [2,7], and the model presented
+   Normalized: 21,23
+----------------------------------------
+
+37. Citation: [2,7]
+   Type: numeric
+   Context: ound in the literature [21,23]. The forecasting of an entire month is seldom done in the literature [2,7], and the model presented did not show signs of deterioration over the forecast window; despite that
+   Normalized: 2,7
+----------------------------------------
+
+38. Citation: [14]
+   Type: numeric
+   Context: For this paper, only HRA and time-series statistics were used as static covariates, but as noted in [14], across different regions there is distinct demand for emergency care, thus impacting the scale and
+   Normalized: 14
+----------------------------------------
+
+39. Citation: (3)
+   Type: numeric
+   Context: mary health care clinic using univariate time-series analysis. Comput. Meth. Programs Biomed. **56**(3), 235–247 (1998). https://doi.org/10.1016/s0169- 2607(98)00032-7
+- 2. Aboagye-Sarfo, P., Mai, Q., Sa
+   Normalized: 3
+----------------------------------------
+
+40. Citation: (7)
+   Type: numeric
+   Context: ., Laplanche, D., Blua, P.: Forecasting the emergency department patients flow. J. Med. Syst. **40**(7), 1–18 (2016). https://doi.org/10.1007/s10916-016-0527-0
+- 4. Batal, H., Tench, J., McMillan, S., Ad
+   Normalized: 7
+----------------------------------------
+
+41. Citation: (1)
+   Type: numeric
+   Context: Predicting patient visits to an urgent care clinic using calendar variables. Acad. Emerg. Med. **8**(1), 48–53 (2001). https://doi.org/10.1111/j.1553-2712.2001.tb00550.x
+- 5. Bernstein, S.L., et al.: The
+   Normalized: 1
+----------------------------------------
+
+42. Citation: (1)
+   Type: numeric
+   Context: he effect of emergency department crowding on clinically oriented outcomes. Acad. Emerg. Med. **16**(1), 1–10 (2009). https://doi.org/10. 1111/j.1553-2712.2008.00295.x
+- 6. Boyle, J., et al.: Predicting
+   Normalized: 1
+----------------------------------------
+
+43. Citation: (5)
+   Type: numeric
+   Context: 08.00295.x
+- 6. Boyle, J., et al.: Predicting emergency department admissions. Emerg. Med. J. **29**(5), 358–365 (2012). https://doi.org/10.1136/emj.2010.103531
+- 7. Carvalho-Silva, M., Monteiro, M.T.T.,
+   Normalized: 5
+----------------------------------------
+
+44. Citation: (1)
+   Type: numeric
+   Context: - 8. Champion, R., et al.: Forecasting emergency department presentations. Aust. Health Rev. **31**(1), 83–90 (2007). https://doi.org/10.1071/AH070083
+- 9. Devlin, J., Chang, M.W., Lee, K., Toutanova, K
+   Normalized: 1
+----------------------------------------
+
+45. Citation: (6)
+   Type: numeric
+   Context: Mannis, S.A.: Use of calendar and weather data to predict walk-in attendance. South. Med. J. **74**(6), 709–712 (1981). https://doi. org/10.1097/00007611-198106000-00020
+- 11. Ekstr¨om, A., Kurland, L.,
+   Normalized: 6
+----------------------------------------
+
+46. Citation: (4)
+   Type: numeric
+   Context: , Nordberg, M.: Forecasting emergency department visits using internet data. Ann. Emerg. Med. **65**(4), 436- 442.e1 (2015). https://doi.org/10.1016/j.annemergmed.2014.10.008
+- 12. Eyles, E., Redaniel, M
+   Normalized: 4
+----------------------------------------
+
+47. Citation: (4)
+   Type: numeric
+   Context: s in the NHS? A time-series MSARIMA analysis of longitudinal data from an NHS trust. BMJ Open **12**(4) (2022). https:// doi.org/10.1136/bmjopen-2021-056523
+- 13. Fan, C., et al.: Multi-horizon time seri
+   Normalized: 4
+----------------------------------------
+
+48. Citation: (4)
+   Type: numeric
+   Context: s for forecasting hospital bed requirements in the acute sector. J. Epidemiol. Commun. Health **44**(4), 307–312 (1990). https://doi. org/10.1136/jech.44.4.307
+- 15. Harrou, F., Dairi, A., Kadri, F., Sun
+   Normalized: 4
+----------------------------------------
+
+49. Citation: (1)
+   Type: numeric
+   Context: ting hourly patient visits in the emergency department to counteract crowding. Ergon. Open J. **10**(1) (2017). https://doi.org/10.2174/ 1875934301710010001
+- 18. Hochreiter, S., Schmidhuber, J.: Long sh
+   Normalized: 1
+----------------------------------------
+
+50. Citation: (8)
+   Type: numeric
+   Context: 5934301710010001
+- 18. Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural Comput. **9**(8), 1735–1780 (1997). https://doi.org/10.1162/neco.1997.9.8.1735
+- 19. Holleman, D.R., Bowling, R.L.,
+   Normalized: 8
+----------------------------------------
+
+51. Citation: (4)
+   Type: numeric
+   Context: walk-in clinic and emergency department using calendar and weather data. J. Gen. Intern. Med. **11**(4), 237–239 (1996)
+- 20. Hurwitz, J.E., Lee, J.A., Lopiano, K.K., McKinley, S.A., Keesling, J., Tyndal
+   Normalized: 4
+----------------------------------------
+
+52. Citation: (1)
+   Type: numeric
+   Context: n platform to quantify and manage emergency department crowding. BMC Med. Inform. Decis. Mak. **14**(1), 50 (2014). https://doi.org/10. 1186/1472-6947-14-50
+- 21. Jones, S.S., Thomas, A., Evans, R.S., We
+   Normalized: 1
+----------------------------------------
+
+53. Citation: (2)
+   Type: numeric
+   Context: Snow, G.L.: Forecasting daily patient volumes in the emergency department. Acad. Emerg. Med. **15**(2), 159–170 (2008). https://doi.org/10.1111/j.1553-2712.2007.00032.x
+- 22. Kadri, F., Abdennbi, K.: RN
+   Normalized: 2
+----------------------------------------
+
+54. Citation: (9)
+   Type: numeric
+   Context: C.: Time series modelling and forecasting of emergency department overcrowding. J. Med. Syst. **38**(9), 1–20 (2014). https://doi.org/10.1007/s10916-014-0107-0
+- 24. Ke, G., et al.: LightGBM: a highly ef
+   Normalized: 9
+----------------------------------------
+
+55. Citation: (4)
+   Type: numeric
+   Context: 9eb6b76fa-Paper.pdf
+- 25. Koenker, R., Hallock, K.F.: Quantile regression. J. Econ. Perspect. **15**(4), 143–156 (2001). https://doi.org/10.1257/jep.15.4.143
+- 26. Lim, B., Arık, S.O., Loeff, N., Pfister
+   Normalized: 4
+----------------------------------------
+
+56. Citation: (4)
+   Type: numeric
+   Context: usion transformers for interpretable multi-horizon time series forecasting. Int. J. Forecast. **37**(4), 1748–1764 (2021). https://doi.org/10.1016/j.ijforecast.2021.03.012
+- 27. Makridakis, S.: Accuracy
+   Normalized: 4
+----------------------------------------
+
+57. Citation: (4)
+   Type: numeric
+   Context: - 27. Makridakis, S.: Accuracy measures: theoretical and practical concerns. Int. J. Forecast. **9**(4), 527–529 (1993). https://doi.org/10.1016/0169-2070(93)90079-3
+- 28. Milner, P.: Forecasting the dem
+   Normalized: 4
+----------------------------------------
+
+58. Citation: (10)
+   Type: numeric
+   Context: mand on accident and emergency departments in health districts in the trent region. Stat. Med. **7**(10), 1061–1072 (1988). https:// doi.org/10.1002/sim.4780071007
+- 29. Navares, R., D´ıaz, J., Linares, C
+   Normalized: 10
+----------------------------------------
+
+59. Citation: (10)
+   Type: numeric
+   Context: admissions due to circulatory and respiratory causes in Madrid. Stoch. Env. Res. Risk Assess. **32**(10), 2849–2859 (2018). https://doi.org/10.1007/s00477-018-1519-z
+- 30. Pines, J.M., Hollander, J.E.: Em
+   Normalized: 10
+----------------------------------------
+
+60. Citation: (1)
+   Type: numeric
+   Context: artment crowding is associated with poor care for patients with severe pain. Ann. Emerg. Med. **51**(1), 1–5 (2008). https://doi.org/10.1016/j.annemergmed.2007.07.008
+- 31. Pulkkinen, E.: forecasting eme
+   Normalized: 1
+----------------------------------------
+
+61. Citation: (3)
+   Type: numeric
+   Context: of variables associated with daily mean emergency department length of stay. Ann. Emerg. Med. **49**(3), 265–271 (2007). https://doi.org/10.1016/j.annemergmed.2006.11.007
+- 33. Rocha, C.N., Rodrigues, F.
+   Normalized: 3
+----------------------------------------
+
+62. Citation: (3)
+   Type: numeric
+   Context: ocha, C.N., Rodrigues, F.: Forecasting emergency department admissions. J. Intell. Inf. Syst. **56**(3), 509–528 (2021). https://doi.org/10.1007/s10844-021-00638- 9
+- 34. Schweigler, L.M., Desmond, J.S.,
+   Normalized: 3
+----------------------------------------
+
+63. Citation: (4)
+   Type: numeric
+   Context: , E.L., Younger, J.G.: Forecasting models of emergency department crowding. Acad. Emerg. Med. **16**(4), 301–308 (2009). https://doi.org/10.1111/j.1553-2712.2009. 00356.x
+- 35. Sharafat, A.R., Bayati, M.
+   Normalized: 4
+----------------------------------------
+
+64. Citation: (6)
+   Type: numeric
+   Context: ic review of models for forecasting the number of emergency department visits. Emerg. Med. J. **26**(6), 395–399 (2009). https://doi.org/10.1136/emj.2008.062380
+- 40. Whitt, W., Zhang, X.: Forecasting ar
+   Normalized: 6
+----------------------------------------
+
+65. Citation: (5)
+   Type: numeric
+   Context: e of triage systems in emergency care: a systematic review and meta-analysis. Br. Med. J. Open **9**(5) (2019). https://doi.org/10.1136/ bmjopen-2018-026471
+- 43. Zhou, L., Zhao, P., Wu, D., Cheng, C., H
+   Normalized: 5
+----------------------------------------
+
+66. Citation: (1)
+   Type: numeric
+   Context: es model for forecasting the number of new admission inpatients. BMC Med. Inform. Decis. Mak. **18**(1), 39 (2018). https://doi.org/10.1186/s12911-018-0616-8
+   Normalized: 1
+----------------------------------------
+
+67. Citation: Minnesota (2019)
+   Type: author_year
+   Context: e 1 (Long and Short Papers), pp. 4171–4186. Association for Computational Linguistics, Minneapolis, Minnesota (2019). https://doi.org/10.18653/v1/N19-1423
+- 10. Diehl, A.K., Morris, M.D., Mannis, S.A.: Use of calenda
+   Normalized: minnesota 2019
+----------------------------------------
+
+68. Citation: York (2019)
+   Type: author_year
+   Context: wledge Discovery and Data Mining, KDD 2019, pp. 2527–2535. Association for Computing Machinery, New York (2019). https://doi.org/10.1145/3292500.3330662
+- 14. Farmer, R.D., Emami, J.: Models for forecasting hosp
+   Normalized: york 2019
+----------------------------------------
+
+69. Citation: Finland (2020)
+   Type: author_year
+   Context: emergency department arrivals with neural networks. Bachelor's thesis, Tampere University, Tampere, Finland (2020)
+- 32. Rathlev, N.K., et al.: Time series analysis of variables associated with daily mean emergency
+   Normalized: finland 2020
+----------------------------------------
+
+70. Citation: Linguistics (2020)
+   Type: author_year
+   Context: ods in Natural Language Processing: System Demonstrations, pp. 38–45. Association for Computational Linguistics (2020). https://doi.org/10.18653/v1/2020.emnlp-demos.6
+- 42. Zachariasse, J.M., van der Hagen, V., Seiger,
+   Normalized: linguistics 2020
+----------------------------------------

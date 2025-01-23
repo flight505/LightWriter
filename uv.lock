@@ -1308,7 +1308,7 @@ requires-dist = [
     { name = "crossrefapi" },
     { name = "graphviz" },
     { name = "lightrag-hku", specifier = ">=1.1.3" },
-    { name = "marker-pdf", specifier = ">=1.2.3" },
+    { name = "marker-pdf", specifier = "==1.2.7" },
     { name = "matplotlib" },
     { name = "mypy" },
     { name = "nano-vectordb" },

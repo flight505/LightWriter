@@ -3,7 +3,7 @@ from enum import Enum
 from pathlib import Path
 
 # File System
-DEFAULT_STORE_PATH = Path.home() / ".lightwriter"
+DEFAULT_STORE_PATH = Path("storage")
 SUPPORTED_EXTENSIONS = [".pdf"]
 TEMP_DIR = DEFAULT_STORE_PATH / "temp"
 
@@ -25,15 +25,31 @@ DEFAULT_OVERLAP = 50
 
 class ProcessingState(Enum):
     """Processing states for pipeline steps."""
-    INITIALIZED = "initialized"
-    EXTRACTING_TEXT = "extracting_text"
-    EXTRACTING_IDENTIFIER = "extracting_identifier"
-    FETCHING_METADATA = "fetching_metadata"
-    EXTRACTING_REFERENCES = "extracting_references"
-    EXTRACTING_EQUATIONS = "extracting_equations"
-    CONSOLIDATING = "consolidating"
+    PENDING = "pending"
+    PROCESSING = "processing"
     COMPLETED = "completed"
     FAILED = "failed"
+
+class DocumentType(Enum):
+    PDF = "pdf"
+    MARKDOWN = "markdown"
+
+class CitationType(Enum):
+    NUMERIC = "numeric"
+    AUTHOR_YEAR = "author_year"
+
+# Base paths
+PROCESSED_OUTPUT_PATH = DEFAULT_STORE_PATH / "processed"
+METADATA_PATH = DEFAULT_STORE_PATH / "metadata"
+VECTOR_PATH = DEFAULT_STORE_PATH / "vectors"
+
+# Processing settings
+MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
+SUPPORTED_FORMATS = [".pdf"]
+
+# Output settings
+DEBUG_OUTPUT = True  # For development phase
+CONTEXT_WINDOW = 100  # Characters before/after for context
 
 # Success Messages
 SUCCESS_MESSAGES = {

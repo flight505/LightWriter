@@ -1,0 +1,483 @@
+Citations Analysis for Choo et al. - 2023 - Deep-learning-based personalized prediction of absolute neutrophil count recovery and comparison with clinicians-annotated.pdf
+================================================================================
+
+Total Citations Found: 70
+Unique References: 31
+
+Citation Details:
+--------------------------------------------------------------------------------
+
+1. Citation: [1]
+   Type: numeric
+   Context: neutropenia is the primary dose-limiting toxicity in patients with cancer treated with chemotherapy [1]. According to the widely used Common Toxicity Criteria from the National Cancer Institute (NCI), ne
+   Normalized: 1
+----------------------------------------
+
+2. Citation: [2]
+   Type: numeric
+   Context: neutropenia has four grades of severity; when it is *<* 500 /μL it is defned as grade four toxicity [2]. Because neutrophils respond to bacteria, viruses, and fungi, patients with neutropenia are more su
+   Normalized: 2
+----------------------------------------
+
+3. Citation: [3]
+   Type: numeric
+   Context: ic fever, empirical antibiotic treatment is required to prevent patients from progressing to sepsis [3]. Patients treated with high-dose chemotherapy who are expected to have severe neutropenia are isola
+   Normalized: 3
+----------------------------------------
+
+4. Citation: [4]
+   Type: numeric
+   Context: erapy-induced myelosuppression using both drug-specifc parameters and common-to-all-drug parameters [4]. As they included the cell supply and feedback mechanism, their model is considered the gold standa
+   Normalized: 4
+----------------------------------------
+
+5. Citation: [5]
+   Type: numeric
+   Context: proliferation to the circulation of stem cells, which limits its application in most clinical cases [5]. Several PK-PD models also improved Friberg's model, focusing on specifc drugs (6-mercaptopurine an
+   Normalized: 5
+----------------------------------------
+
+6. Citation: [6]
+   Type: numeric
+   Context: PD models also improved Friberg's model, focusing on specifc drugs (6-mercaptopurine and sunitinib) [6] or specifc protocols (NOPHO ALL-2008) [7]. Currently, multiple drugs are used for different protoco
+   Normalized: 6
+----------------------------------------
+
+7. Citation: [7]
+   Type: numeric
+   Context: ocusing on specifc drugs (6-mercaptopurine and sunitinib) [6] or specifc protocols (NOPHO ALL-2008) [7]. Currently, multiple drugs are used for different protocols [8], and the doses and concentrations o
+   Normalized: 7
+----------------------------------------
+
+8. Citation: [8]
+   Type: numeric
+   Context: specifc protocols (NOPHO ALL-2008) [7]. Currently, multiple drugs are used for different protocols [8], and the doses and concentrations of
+
+E-mail addresses: sy.shin@skku.edu (S.-Y. Shin), meonghi.son@
+   Normalized: 8
+----------------------------------------
+
+9. Citation: [9]
+   Type: numeric
+   Context: g are determined by various factors, such as the body surface area and the patient's renal function [9]. Therefore, it is diffcult to obtain generalized predictions using the PK-PD model.
+
+Several studie
+   Normalized: 9
+----------------------------------------
+
+10. Citation: [10]
+   Type: numeric
+   Context: hil count (ANC) values. Netterberg et al. used support vector machines to predict future ANC values [10]. Cuplov et al. modeled the effect of ifosfamide on neutrophils and platelets using a gradient boost
+   Normalized: 10
+----------------------------------------
+
+11. Citation: [11]
+   Type: numeric
+   Context: ets using a gradient boosting regression method that included an explicit interpolation of the data [11]. Both studies showed the potential for data-driven models to predict hematologic recovery; however,
+   Normalized: 11
+----------------------------------------
+
+12. Citation: [12,13]
+   Type: numeric
+   Context: odel, various variables affecting the recovery from myelosuppression were not considered as factors [12,13]. The electronic health record (EHR) data contains most of the possible factors affecting myelosuppr
+   Normalized: 12,13
+----------------------------------------
+
+13. Citation: [14]
+   Type: numeric
+   Context: terms of input interval since they are derived from the patient's irregular visits to the hospital [14]. Understanding the known limitation of the EHR data, we aimed to fnd the best possible model for AN
+   Normalized: 14
+----------------------------------------
+
+14. Citation: [2]
+   Type: numeric
+   Context: / μL, which is a grade four toxicity by Common Terminology Criteria for Adverse Events (CTCAE v5.0) [2] from NCI, and this period is denoted by neutropenia500. Recovery day, which is the predictive goal
+   Normalized: 2
+----------------------------------------
+
+15. Citation: [15,16]
+   Type: numeric
+   Context: elligence (CONSORT-AI) checklist to report the results of the clinical artifcial intelligence model [15,16].
+
+To predict the recovery day from neutropenia after administration of high-dose chemotherapy in pe
+   Normalized: 15,16
+----------------------------------------
+
+16. Citation: [17]
+   Type: numeric
+   Context: Among the time series forecasting algorithms, we chose Google's temporal fusion transformer (TFT) [17] to predict the change in the ANC value within 30 days of the high-dose chemotherapy cycle. This mod
+   Normalized: 17
+----------------------------------------
+
+17. Citation: [18]
+   Type: numeric
+   Context: the questionnaire
+
+We developed a new questionnaire based on the technology acceptance model (TAM) [18], and the details are described in the Development of the questionnaire section of the supplementary
+   Normalized: 18
+----------------------------------------
+
+18. Citation: [19]
+   Type: numeric
+   Context: model and human experts. The pairwise proportion test was used to compare groups, and Levene's test [19] was used to check groups for the assumption of homogeneity of variance of the residuals. Bonferroni
+   Normalized: 19
+----------------------------------------
+
+19. Citation: [20]
+   Type: numeric
+   Context: ient. There have been several machine learning approach studies concerned with mortality prediction [20], prediction of the onset of leucopenia [21,22], or modeling myelosuppression for a specifc single c
+   Normalized: 20
+----------------------------------------
+
+20. Citation: [21,22]
+   Type: numeric
+   Context: ng approach studies concerned with mortality prediction [20], prediction of the onset of leucopenia [21,22], or modeling myelosuppression for a specifc single chemotherapeutic agent [11,23]; however, there a
+   Normalized: 21,22
+----------------------------------------
+
+21. Citation: [11,23]
+   Type: numeric
+   Context: set of leucopenia [21,22], or modeling myelosuppression for a specifc single chemotherapeutic agent [11,23]; however, there are no studies that directly compared the model with clinicians. In this study, we
+   Normalized: 11,23
+----------------------------------------
+
+22. Citation: [24]
+   Type: numeric
+   Context: erved in previous studies, including comparisons with clinicians such as reading fundus photographs [24], chest radiographs [25], or acute kidney injury prediction [26], it should be considered that most
+   Normalized: 24
+----------------------------------------
+
+23. Citation: [25]
+   Type: numeric
+   Context: s, including comparisons with clinicians such as reading fundus photographs [24], chest radiographs [25], or acute kidney injury prediction [26], it should be considered that most of these studies were pr
+   Normalized: 25
+----------------------------------------
+
+24. Citation: [26]
+   Type: numeric
+   Context: such as reading fundus photographs [24], chest radiographs [25], or acute kidney injury prediction [26], it should be considered that most of these studies were predictions for binary outcomes with non-t
+   Normalized: 26
+----------------------------------------
+
+25. Citation: [27,28]
+   Type: numeric
+   Context: rest was whether clinicians would accept the model's prediction. There are several previous studies [27,28] on this topic, and two claim that clinicians accepted the predictions of the deep learning model. A
+   Normalized: 27,28
+----------------------------------------
+
+26. Citation: [29]
+   Type: numeric
+   Context: o claim that clinicians accepted the predictions of the deep learning model. As in a previous study [29], we developed a new questionnaire based on TAM and analyzed the results of the
+
+questionnaire and t
+   Normalized: 29
+----------------------------------------
+
+27. Citation: [30,31]
+   Type: numeric
+   Context: gatively to "Trust in the prediction models" from the survey designed based on TAM. Several studies [30,31] have reported cases where a model's incorrect prediction was followed, and inaccurate results were
+   Normalized: 30,31
+----------------------------------------
+
+28. Citation: [1]
+   Type: numeric
+   Context: recovery; however, they have often been limited for certain drugs and lack generalized predictions [1] What this Paper Adds A deep learning model showed similar or better predictive performance than cli
+   Normalized: 1
+----------------------------------------
+
+29. Citation: [1]
+   Type: numeric
+   Context: to this article can be found online at https://doi. org/10.1016/j.jbi.2022.104268.
+
+# References
+
+- [1] J. Crawford, D.C. Dale, G.H. Lyman, Chemotherapy-induced neutropenia: risks, consequences, and new
+   Normalized: 1
+----------------------------------------
+
+30. Citation: [2]
+   Type: numeric
+   Context: new directions for its management, Cancer 100 (2004) 228–237, https://doi.org/10.1002/cncr.11882.
+- [2] Common terminology criteria for adverse events (CTCAE), Cancer.gov. https://ct ep.cancer.gov/protoc
+   Normalized: 2
+----------------------------------------
+
+31. Citation: [3]
+   Type: numeric
+   Context: nt/electronic_applications/docs/CTCAE_v5_Quic k_Reference_8.5x11.pdf, 2021 (accessed 7 May 2021).
+- [3] T. Lehrnbecher, Treatment of fever in neutropenia in pediatric oncology patients, Curr. Opin. Pedia
+   Normalized: 3
+----------------------------------------
+
+32. Citation: [4]
+   Type: numeric
+   Context: gy patients, Curr. Opin. Pediatr. 31 (2019) 35–40, https://doi.org/10.1097/ MOP.0000000000000708.
+- [4] L.E. Friberg, A. Henningsson, H. Maas, L. Nguyen, M.O. Karlsson, Model of chemotherapy-induced myel
+   Normalized: 4
+----------------------------------------
+
+33. Citation: [5]
+   Type: numeric
+   Context: tency across drugs, J. Clin. Oncol. 20 (2002) 4713–4721, https://doi.org/10.1200/JCO.2002.02.140.
+- [5] M. Craig, A.R. Humphries, M.C. Mackey, A Mathematical model of granulopoiesis incorporating the neg
+   Normalized: 5
+----------------------------------------
+
+34. Citation: [6]
+   Type: numeric
+   Context: ternalization, Bull. Math. Biol. 78 (2016) 2304–2357, https://doi. org/10.1007/s11538-016-0179-8.
+- [6] S. Karppinen, O. Lohi, M. Vihola, Prediction of leukocyte counts during paediatric acute lymphoblas
+   Normalized: 6
+----------------------------------------
+
+35. Citation: [7]
+   Type: numeric
+   Context: ukemia maintenance therapy, Sci. Rep. 9 (2019) 18076, https://doi.org/10.1038/s41598-019-54492-5.
+- [7] R. Khosravan, S.G. DuBois, K. Janeway, E. Wang, Extrapolation of pharmacokinetics and pharmacodynam
+   Normalized: 7
+----------------------------------------
+
+36. Citation: [8]
+   Type: numeric
+   Context: mors, Cancer Chemother. Pharmacol. 87 (2021) 621–634, https://doi.org/10.1007/s00280-020-04221-x.
+- [8] R.B. Mokhtari, T.S. Homayouni, N. Baluch, E. Morgatskaya, S. Kumar, B. Das, H. Yeger, Combination t
+   Normalized: 8
+----------------------------------------
+
+37. Citation: [9]
+   Type: numeric
+   Context: mbating cancer, Oncotarget. 8 (23) (2017) 38022–38043, https://doi.org/10.18632/oncotarget.16723.
+- [9] H. Gurney, How to calculate the dose of chemotherapy, Br. J. Cancer. 86 (2002) 1297–1302, https://d
+   Normalized: 9
+----------------------------------------
+
+38. Citation: [10]
+   Type: numeric
+   Context: dose of chemotherapy, Br. J. Cancer. 86 (2002) 1297–1302, https://doi.org/10.1038/sj.bjc.6600139.
+- [10] I. Netterberg, E.I. Nielsen, L.E. Friberg, M.O. Karlsson, Model-based prediction of myelosuppressio
+   Normalized: 10
+----------------------------------------
+
+39. Citation: [11]
+   Type: numeric
+   Context: ring, Cancer Chemother. Pharmacol. 80 (2017) 343–353, https://doi.org/10.1007/s00280-017- 3366-x.
+- [11] V. Cuplov, N. Andr´e, Machine learning approach to forecast chemotherapyinduced haematological toxi
+   Normalized: 11
+----------------------------------------
+
+40. Citation: [12]
+   Type: numeric
+   Context: with rhabdomyosarcoma, Cancers (Basel). 12 (2020) 1944, https://doi.org/10.3390/cancers12071944.
+- [12] P. Nieboer, E.G.E. de Vries, E. Vellenga, W.T.A. van der Graaf, N.H. Mulder, W. J. Sluiter, J.T.M.
+   Normalized: 12
+----------------------------------------
+
+41. Citation: [13]
+   Type: numeric
+   Context: ar analysis, Eur. J. Cancer. 40 (8) (2004) 1199–1207, https://doi.org/10.1016/j.ejca.2004.01.029.
+- [13] M.H. Son, D.H. Kim, S.H. Lee, K.H. Yoo, K.W. Sung, H.H. Koo, J.Y. Kim, E.J. Cho, E. S. Kang, D.W. K
+   Normalized: 13
+----------------------------------------
+
+42. Citation: [14]
+   Type: numeric
+   Context: olid tumors, J. Korean Med. Sci. 28 (2) (2013), 220, https://doi.org/10.3346/ jkms.2013.28.2.220.
+- [14] G. Litjens, T. Kooi, B.E. Bejnordi, A.A.A. Setio, F. Ciompi, M. Ghafoorian, J.A.W. M. van der Laak,
+   Normalized: 14
+----------------------------------------
+
+43. Citation: [15]
+   Type: numeric
+   Context: l image analysis, Med. Image Anal. 42 (2017) 60–88, https://doi.org/ 10.1016/j.media.2017.07.005.
+- [15] B. Norgeot, G. Quer, B.K. Beaulieu-Jones, A. Torkamani, R. Dias, M. Gianfrancesco, R. Arnaout, I.S.
+   Normalized: 15
+----------------------------------------
+
+44. Citation: [16]
+   Type: numeric
+   Context: I-CLAIM checklist, Nat. Med. 26 (9) (2020) 1320–1324, https://doi.org/10.1038/s41591- 020-1041-y.
+- [16] X. Liu, S. Cruz Rivera, D. Moher, M.J. Calvert, A.K. Denniston, A.-W. Chan, A. Darzi, C. Holmes, C.
+   Normalized: 16
+----------------------------------------
+
+45. Citation: [17]
+   Type: numeric
+   Context: SORT-AI extension, Nat. Med. 26 (9) (2020) 1364–1374, https://doi.org/ 10.1038/s41591-020-1034-x.
+- [17] B. Lim, S.O. ¨ Arık, N. Loeff, T. Pfster, Temporal fusion transformers for interpretable multi-hori
+   Normalized: 17
+----------------------------------------
+
+46. Citation: [18]
+   Type: numeric
+   Context: casting, Int. J. Forecast. 37 (2021) 1748–1764, https://doi.org/10.1016/j.ijforecast.2021.03.012.
+- [18] F.D. Davis, Perceived usefulness, perceived ease of use, and user acceptance of information technol
+   Normalized: 18
+----------------------------------------
+
+47. Citation: [19]
+   Type: numeric
+   Context: user acceptance of information technology, MIS Q. 13 (1989) 319, https://doi.org/10.2307/249008.
+- [19] H. Levene, Robust Tests for equality of variances in contributions to probability and statistics, i
+   Normalized: 19
+----------------------------------------
+
+48. Citation: [20]
+   Type: numeric
+   Context: and statistics, in: I. Olkins (Ed.), Stanford, Stanford University Press, CA, 1960, pp. 278–292.
+- [20] B.J. Cho, K.M. Kim, S.E. Bilegsaikhan, Y.J. Suh, Machine learning improves the prediction of febril
+   Normalized: 20
+----------------------------------------
+
+49. Citation: [21]
+   Type: numeric
+   Context: herapy for breast cancer, Sci. Rep. 10 (2020) 14803, https://doi.org/10.1038/s41598- 020-71927-6.
+- [21] C. Zhu, S.H. Lin, X. Jiang, Y. Xiang, Z. Belal, G. Jun, R. Mohan, A novel deep learning model using
+   Normalized: 21
+----------------------------------------
+
+50. Citation: [22]
+   Type: numeric
+   Context: nia prediction, Phys. Med. Biol. 65 (3) (2020) 035014, https:// doi.org/10.1088/1361-6560/ab63b6.
+- [22] S.M. Naushad, P. Dorababu, Y. Rupasree, A. Pavani, D. Raghunadharao, T. Hussain, S.A. Alrokayan, V.
+   Normalized: 22
+----------------------------------------
+
+51. Citation: [23]
+   Type: numeric
+   Context: , Cancer Chemother. Pharmacol. 83 (5) (2019) 875–880, https://doi.org/10.1007/s00280-019-03803-8.
+- [23] T. Shibahara, S. Ikuta, Y. Muragaki, Machine-learning approach for modeling myelosuppression attrib
+   Normalized: 23
+----------------------------------------
+
+52. Citation: [24]
+   Type: numeric
+   Context: tine hydrochloride, JCO Clin. Cancer Inform. 2 (2018) 1–21, https://doi.org/10.1200/CCI.17.00022.
+- [24] D. Lin, et al., Application of comprehensive artifcial intelligence retinal expert (CARE) system: A
+   Normalized: 24
+----------------------------------------
+
+53. Citation: [25]
+   Type: numeric
+   Context: e study, Lancet Digit. Health. 3 (2021) e486–e495, https://doi.org/10.1016/S2589-7500(21)00086-8.
+- [25] J.T. Wu, K.C.L. Wong, Y. Gur, N. Ansari, A. Karargyris, A. Sharma, M. Morris, B. Saboury, H. Ahmad,
+   Normalized: 25
+----------------------------------------
+
+54. Citation: [26]
+   Type: numeric
+   Context: s, JAMA Netw. Open. 3 (10) (2020), e2022779, https://doi.org/10.1001/ jamanetworkopen.2020.22779.
+- [26] N. Rank, B. Pfahringer, J. Kempfert, C. Stamm, T. Kühne, F. Schoenrath, V. Falk, C. Eickhoff, A. Me
+   Normalized: 26
+----------------------------------------
+
+55. Citation: [27]
+   Type: numeric
+   Context: predictive performance, NPJ Digit. Med. 3 (1) (2020), https://doi.org/10.1038/s41746-020-00346-8.
+- [27] S. Gaube, H. Suresh, M. Raue, A. Merritt, S.J. Berkowitz, E. Lermer, J.F. Coughlin, J.V. Guttag, E.
+   Normalized: 27
+----------------------------------------
+
+56. Citation: [28]
+   Type: numeric
+   Context: linical decision-aids, NPJ Digit. Med. 4 (1) (2021), https://doi.org/10.1038/ s41746-021-00385-9.
+- [28] INFANT Collaborative Group, Computerised interpretation of fetal heart rate during labor (INFANT):
+   Normalized: 28
+----------------------------------------
+
+57. Citation: [29]
+   Type: numeric
+   Context: ed controlled trial, Lancet. 389 (2017) 1719–1729, https://doi.org/10.1016/S0140-6736(17)30568-8.
+- [29] S. Jauk, D. Kramer, A. Avian, A. Berghold, W. Leodolter, S. Schulz, Technology acceptance of a mach
+   Normalized: 29
+----------------------------------------
+
+58. Citation: [30]
+   Type: numeric
+   Context: a mixed-methods study, J. Med. Syst. 45 (4) (2021), https://doi.org/ 10.1007/s10916-021-01727-6.
+- [30] M. Jacobs, et al., How machine-learning recommendations infuence clinician treatment selections: th
+   Normalized: 30
+----------------------------------------
+
+59. Citation: [31]
+   Type: numeric
+   Context: ressant selection, Transl. Psychiatry. 11 (2021) 108, https://doi.org/10.1038/s41398-021-01224-x.
+- [31] C.J. Kelly, A. Karthikesalingam, M. Suleyman, G. Corrado, D. King, Key challenges for delivering cl
+   Normalized: 31
+----------------------------------------
+
+60. Citation: (23)
+   Type: numeric
+   Context: E. Morgatskaya, S. Kumar, B. Das, H. Yeger, Combination therapy in combating cancer, Oncotarget. 8 (23) (2017) 38022–38043, https://doi.org/10.18632/oncotarget.16723.
+- [9] H. Gurney, How to calculate th
+   Normalized: 23
+----------------------------------------
+
+61. Citation: (8)
+   Type: numeric
+   Context: eral stem-cell transplantation for haematological malignancies; 1-year analysis, Eur. J. Cancer. 40 (8) (2004) 1199–1207, https://doi.org/10.1016/j.ejca.2004.01.029.
+- [13] M.H. Son, D.H. Kim, S.H. Lee,
+   Normalized: 8
+----------------------------------------
+
+62. Citation: (2)
+   Type: numeric
+   Context: utologous stem cell transplantation in children with high-risk solid tumors, J. Korean Med. Sci. 28 (2) (2013), 220, https://doi.org/10.3346/ jkms.2013.28.2.220.
+- [14] G. Litjens, T. Kooi, B.E. Bejnordi
+   Normalized: 2
+----------------------------------------
+
+63. Citation: (9)
+   Type: numeric
+   Context: um information about clinical artifcial intelligence modeling: the MI-CLAIM checklist, Nat. Med. 26 (9) (2020) 1320–1324, https://doi.org/10.1038/s41591- 020-1041-y.
+- [16] X. Liu, S. Cruz Rivera, D. Moh
+   Normalized: 9
+----------------------------------------
+
+64. Citation: (9)
+   Type: numeric
+   Context: reports for interventions involving artifcial intelligence: the CONSORT-AI extension, Nat. Med. 26 (9) (2020) 1364–1374, https://doi.org/ 10.1038/s41591-020-1034-x.
+- [17] B. Lim, S.O. ¨ Arık, N. Loeff,
+   Normalized: 9
+----------------------------------------
+
+65. Citation: (3)
+   Type: numeric
+   Context: nd clinical information for grade 4 radiotherapyinduced lymphopenia prediction, Phys. Med. Biol. 65 (3) (2020) 035014, https:// doi.org/10.1088/1361-6560/ab63b6.
+- [22] S.M. Naushad, P. Dorababu, Y. Rupa
+   Normalized: 3
+----------------------------------------
+
+66. Citation: (5)
+   Type: numeric
+   Context: ed leucopenia grades in children with acute lymphoblastic leukemia, Cancer Chemother. Pharmacol. 83 (5) (2019) 875–880, https://doi.org/10.1007/s00280-019-03803-8.
+- [23] T. Shibahara, S. Ikuta, Y. Murag
+   Normalized: 5
+----------------------------------------
+
+67. Citation: (10)
+   Type: numeric
+   Context: raph Interpretations by Artifcial Intelligence Algorithm vs Radiology Residents, JAMA Netw. Open. 3 (10) (2020), e2022779, https://doi.org/10.1001/ jamanetworkopen.2020.22779.
+- [26] N. Rank, B. Pfahringe
+   Normalized: 10
+----------------------------------------
+
+68. Citation: (1)
+   Type: numeric
+   Context: -time prediction of acute kidney injury outperforms human predictive performance, NPJ Digit. Med. 3 (1) (2020), https://doi.org/10.1038/s41746-020-00346-8.
+- [27] S. Gaube, H. Suresh, M. Raue, A. Merritt
+   Normalized: 1
+----------------------------------------
+
+69. Citation: (1)
+   Type: numeric
+   Context: . Ghassemi, Do as AI say: susceptibility in deployment of clinical decision-aids, NPJ Digit. Med. 4 (1) (2021), https://doi.org/10.1038/ s41746-021-00385-9.
+- [28] INFANT Collaborative Group, Computerise
+   Normalized: 1
+----------------------------------------
+
+70. Citation: (4)
+   Type: numeric
+   Context: arning algorithm predicting delirium in a clinical setting: a mixed-methods study, J. Med. Syst. 45 (4) (2021), https://doi.org/ 10.1007/s10916-021-01727-6.
+- [30] M. Jacobs, et al., How machine-learning
+   Normalized: 4
+----------------------------------------
