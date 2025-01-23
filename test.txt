@@ -14,13 +14,17 @@
 │       ├── __init__.py
 │       ├── constants.py
 │       └── logger.py
+├── storage
+│   ├── logs
+│   │   └── lightwriter.log
+│   ├── metadata.json
+│   └── processed
+│       └── test_results
+├── test.txt
 ├── tests
 │   ├── pdfs
-│   │   ├── Brown et al. - 2020 - Pediatric acute lymphoblastic leukemia, version 2.2020-annotated.pdf
-│   │   ├── Caldas, Soares - 2023 - A Temporal Fusion Transformer for Long-Term Explainable Prediction of Emergency Department Overcrowding-annotated.pdf
-│   │   ├── Chen et al. - 2023 - TSMixer An All-MLP Architecture for Time Series Forecasting-annotated.pdf
-│   │   ├── Choo et al. - 2023 - Deep-learning-based personalized prediction of absolute neutrophil count recovery and comparison with clinicians-annotated.pdf
-│   │   └── Escobar et al. - 2020 - Automated Identification of Adults at Risk for In-Hospital Clinical Deterioration-annotated.pdf
+│   ├── test_citations.py
 │   ├── test_extractors.py
 │   ├── test_pdf_processing.py
+│   ├── test_pipeline.py
 │   └── test_store.py

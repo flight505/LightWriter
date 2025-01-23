@@ -285,7 +285,7 @@
     },
     {
       "text": "[26]",
-      "context": "|\n\n**Table 1.** Hyperparameters for TFT model after tuning.\n\nThe prediction function is defined as [26]:\n\n$$\\hat{y}_{i}(q,t,\\tau)=f_{q}(\\tau,y_{i,t-k:t},x_{i,t-k:t},s_{i})\\tag{5}$$\n\nwhere \u02c6y*i*(q, t, \u03c4 )",
+      "context": "|\n\n**Table 1.** Hyperparameters for TFT model after tuning.\n\nThe prediction function is defined as [26]:\n\n$$\\hat{y}_{i}(q,t,\\tau)=f_{q}(\\tau,y_{i,t-k:t},x_{i,t-k:t},s_{i})\\tag{5}$$\n\nwhere ˆy*i*(q, t, τ )",
       "citation_type": "numeric",
       "position": {
         "start": 18312,
@@ -345,7 +345,7 @@
     },
     {
       "text": "[26]",
-      "context": "rpretable multi-head attention is used to evaluate the most relevant time-steps. Image adapted from [26].\n\n**Table 2.** Prediction accuracy for various models in the period 24/01/2022\u201320/02/2022. To evalu",
+      "context": "rpretable multi-head attention is used to evaluate the most relevant time-steps. Image adapted from [26].\n\n**Table 2.** Prediction accuracy for various models in the period 24/01/2022–20/02/2022. To evalu",
       "citation_type": "numeric",
       "position": {
         "start": 21174,
@@ -385,7 +385,7 @@
     },
     {
       "text": "(3)",
-      "context": "mary health care clinic using univariate time-series analysis. Comput. Meth. Programs Biomed. **56**(3), 235\u2013247 (1998). https://doi.org/10.1016/s0169- 2607(98)00032-7\n- 2. Aboagye-Sarfo, P., Mai, Q., Sa",
+      "context": "mary health care clinic using univariate time-series analysis. Comput. Meth. Programs Biomed. **56**(3), 235–247 (1998). https://doi.org/10.1016/s0169- 2607(98)00032-7\n- 2. Aboagye-Sarfo, P., Mai, Q., Sa",
       "citation_type": "numeric",
       "position": {
         "start": 30117,
@@ -395,7 +395,7 @@
     },
     {
       "text": "(7)",
-      "context": "., Laplanche, D., Blua, P.: Forecasting the emergency department patients flow. J. Med. Syst. **40**(7), 1\u201318 (2016). https://doi.org/10.1007/s10916-016-0527-0\n- 4. Batal, H., Tench, J., McMillan, S., Ad",
+      "context": "., Laplanche, D., Blua, P.: Forecasting the emergency department patients flow. J. Med. Syst. **40**(7), 1–18 (2016). https://doi.org/10.1007/s10916-016-0527-0\n- 4. Batal, H., Tench, J., McMillan, S., Ad",
       "citation_type": "numeric",
       "position": {
         "start": 30662,
@@ -405,7 +405,7 @@
     },
     {
       "text": "(1)",
-      "context": "Predicting patient visits to an urgent care clinic using calendar variables. Acad. Emerg. Med. **8**(1), 48\u201353 (2001). https://doi.org/10.1111/j.1553-2712.2001.tb00550.x\n- 5. Bernstein, S.L., et al.: The",
+      "context": "Predicting patient visits to an urgent care clinic using calendar variables. Acad. Emerg. Med. **8**(1), 48–53 (2001). https://doi.org/10.1111/j.1553-2712.2001.tb00550.x\n- 5. Bernstein, S.L., et al.: The",
       "citation_type": "numeric",
       "position": {
         "start": 30888,
@@ -415,7 +415,7 @@
     },
     {
       "text": "(1)",
-      "context": "he effect of emergency department crowding on clinically oriented outcomes. Acad. Emerg. Med. **16**(1), 1\u201310 (2009). https://doi.org/10. 1111/j.1553-2712.2008.00295.x\n- 6. Boyle, J., et al.: Predicting",
+      "context": "he effect of emergency department crowding on clinically oriented outcomes. Acad. Emerg. Med. **16**(1), 1–10 (2009). https://doi.org/10. 1111/j.1553-2712.2008.00295.x\n- 6. Boyle, J., et al.: Predicting",
       "citation_type": "numeric",
       "position": {
         "start": 31089,
@@ -425,7 +425,7 @@
     },
     {
       "text": "(5)",
-      "context": "08.00295.x\n- 6. Boyle, J., et al.: Predicting emergency department admissions. Emerg. Med. J. **29**(5), 358\u2013365 (2012). https://doi.org/10.1136/emj.2010.103531\n- 7. Carvalho-Silva, M., Monteiro, M.T.T.,",
+      "context": "08.00295.x\n- 6. Boyle, J., et al.: Predicting emergency department admissions. Emerg. Med. J. **29**(5), 358–365 (2012). https://doi.org/10.1136/emj.2010.103531\n- 7. Carvalho-Silva, M., Monteiro, M.T.T.,",
       "citation_type": "numeric",
       "position": {
         "start": 31246,
@@ -435,7 +435,7 @@
     },
     {
       "text": "(1)",
-      "context": "- 8. Champion, R., et al.: Forecasting emergency department presentations. Aust. Health Rev. **31**(1), 83\u201390 (2007). https://doi.org/10.1071/AH070083\n- 9. Devlin, J., Chang, M.W., Lee, K., Toutanova, K",
+      "context": "- 8. Champion, R., et al.: Forecasting emergency department presentations. Aust. Health Rev. **31**(1), 83–90 (2007). https://doi.org/10.1071/AH070083\n- 9. Devlin, J., Chang, M.W., Lee, K., Toutanova, K",
       "citation_type": "numeric",
       "position": {
         "start": 31658,
@@ -445,7 +445,7 @@
     },
     {
       "text": "(6)",
-      "context": "Mannis, S.A.: Use of calendar and weather data to predict walk-in attendance. South. Med. J. **74**(6), 709\u2013712 (1981). https://doi. org/10.1097/00007611-198106000-00020\n- 11. Ekstr\u00a8om, A., Kurland, L.,",
+      "context": "Mannis, S.A.: Use of calendar and weather data to predict walk-in attendance. South. Med. J. **74**(6), 709–712 (1981). https://doi. org/10.1097/00007611-198106000-00020\n- 11. Ekstr¨om, A., Kurland, L.,",
       "citation_type": "numeric",
       "position": {
         "start": 32286,
@@ -475,7 +475,7 @@
     },
     {
       "text": "(4)",
-      "context": "s for forecasting hospital bed requirements in the acute sector. J. Epidemiol. Commun. Health **44**(4), 307\u2013312 (1990). https://doi. org/10.1136/jech.44.4.307\n- 15. Harrou, F., Dairi, A., Kadri, F., Sun",
+      "context": "s for forecasting hospital bed requirements in the acute sector. J. Epidemiol. Commun. Health **44**(4), 307–312 (1990). https://doi. org/10.1136/jech.44.4.307\n- 15. Harrou, F., Dairi, A., Kadri, F., Sun",
       "citation_type": "numeric",
       "position": {
         "start": 33335,
@@ -495,7 +495,7 @@
     },
     {
       "text": "(8)",
-      "context": "5934301710010001\n- 18. Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural Comput. **9**(8), 1735\u20131780 (1997). https://doi.org/10.1162/neco.1997.9.8.1735\n- 19. Holleman, D.R., Bowling, R.L.,",
+      "context": "5934301710010001\n- 18. Hochreiter, S., Schmidhuber, J.: Long short-term memory. Neural Comput. **9**(8), 1735–1780 (1997). https://doi.org/10.1162/neco.1997.9.8.1735\n- 19. Holleman, D.R., Bowling, R.L.,",
       "citation_type": "numeric",
       "position": {
         "start": 34099,
@@ -505,7 +505,7 @@
     },
     {
       "text": "(4)",
-      "context": "walk-in clinic and emergency department using calendar and weather data. J. Gen. Intern. Med. **11**(4), 237\u2013239 (1996)\n- 20. Hurwitz, J.E., Lee, J.A., Lopiano, K.K., McKinley, S.A., Keesling, J., Tyndal",
+      "context": "walk-in clinic and emergency department using calendar and weather data. J. Gen. Intern. Med. **11**(4), 237–239 (1996)\n- 20. Hurwitz, J.E., Lee, J.A., Lopiano, K.K., McKinley, S.A., Keesling, J., Tyndal",
       "citation_type": "numeric",
       "position": {
         "start": 34342,
@@ -525,7 +525,7 @@
     },
     {
       "text": "(2)",
-      "context": "Snow, G.L.: Forecasting daily patient volumes in the emergency department. Acad. Emerg. Med. **15**(2), 159\u2013170 (2008). https://doi.org/10.1111/j.1553-2712.2007.00032.x\n- 22. Kadri, F., Abdennbi, K.: RN",
+      "context": "Snow, G.L.: Forecasting daily patient volumes in the emergency department. Acad. Emerg. Med. **15**(2), 159–170 (2008). https://doi.org/10.1111/j.1553-2712.2007.00032.x\n- 22. Kadri, F., Abdennbi, K.: RN",
       "citation_type": "numeric",
       "position": {
         "start": 34799,
@@ -535,7 +535,7 @@
     },
     {
       "text": "(9)",
-      "context": "C.: Time series modelling and forecasting of emergency department overcrowding. J. Med. Syst. **38**(9), 1\u201320 (2014). https://doi.org/10.1007/s10916-014-0107-0\n- 24. Ke, G., et al.: LightGBM: a highly ef",
+      "context": "C.: Time series modelling and forecasting of emergency department overcrowding. J. Med. Syst. **38**(9), 1–20 (2014). https://doi.org/10.1007/s10916-014-0107-0\n- 24. Ke, G., et al.: LightGBM: a highly ef",
       "citation_type": "numeric",
       "position": {
         "start": 35244,
@@ -545,7 +545,7 @@
     },
     {
       "text": "(4)",
-      "context": "9eb6b76fa-Paper.pdf\n- 25. Koenker, R., Hallock, K.F.: Quantile regression. J. Econ. Perspect. **15**(4), 143\u2013156 (2001). https://doi.org/10.1257/jep.15.4.143\n- 26. Lim, B., Ar\u0131k, S.O., Loeff, N., Pfister",
+      "context": "9eb6b76fa-Paper.pdf\n- 25. Koenker, R., Hallock, K.F.: Quantile regression. J. Econ. Perspect. **15**(4), 143–156 (2001). https://doi.org/10.1257/jep.15.4.143\n- 26. Lim, B., Arık, S.O., Loeff, N., Pfister",
       "citation_type": "numeric",
       "position": {
         "start": 35700,
@@ -555,7 +555,7 @@
     },
     {
       "text": "(4)",
-      "context": "usion transformers for interpretable multi-horizon time series forecasting. Int. J. Forecast. **37**(4), 1748\u20131764 (2021). https://doi.org/10.1016/j.ijforecast.2021.03.012\n- 27. Makridakis, S.: Accuracy",
+      "context": "usion transformers for interpretable multi-horizon time series forecasting. Int. J. Forecast. **37**(4), 1748–1764 (2021). https://doi.org/10.1016/j.ijforecast.2021.03.012\n- 27. Makridakis, S.: Accuracy",
       "citation_type": "numeric",
       "position": {
         "start": 35919,
@@ -565,7 +565,7 @@
     },
     {
       "text": "(4)",
-      "context": "- 27. Makridakis, S.: Accuracy measures: theoretical and practical concerns. Int. J. Forecast. **9**(4), 527\u2013529 (1993). https://doi.org/10.1016/0169-2070(93)90079-3\n- 28. Milner, P.: Forecasting the dem",
+      "context": "- 27. Makridakis, S.: Accuracy measures: theoretical and practical concerns. Int. J. Forecast. **9**(4), 527–529 (1993). https://doi.org/10.1016/0169-2070(93)90079-3\n- 28. Milner, P.: Forecasting the dem",
       "citation_type": "numeric",
       "position": {
         "start": 36091,
@@ -575,7 +575,7 @@
     },
     {
       "text": "(10)",
-      "context": "mand on accident and emergency departments in health districts in the trent region. Stat. Med. **7**(10), 1061\u20131072 (1988). https:// doi.org/10.1002/sim.4780071007\n- 29. Navares, R., D\u00b4\u0131az, J., Linares, C",
+      "context": "mand on accident and emergency departments in health districts in the trent region. Stat. Med. **7**(10), 1061–1072 (1988). https:// doi.org/10.1002/sim.4780071007\n- 29. Navares, R., D´ıaz, J., Linares, C",
       "citation_type": "numeric",
       "position": {
         "start": 36293,
@@ -585,7 +585,7 @@
     },
     {
       "text": "(10)",
-      "context": "admissions due to circulatory and respiratory causes in Madrid. Stoch. Env. Res. Risk Assess. **32**(10), 2849\u20132859 (2018). https://doi.org/10.1007/s00477-018-1519-z\n- 30. Pines, J.M., Hollander, J.E.: Em",
+      "context": "admissions due to circulatory and respiratory causes in Madrid. Stoch. Env. Res. Risk Assess. **32**(10), 2849–2859 (2018). https://doi.org/10.1007/s00477-018-1519-z\n- 30. Pines, J.M., Hollander, J.E.: Em",
       "citation_type": "numeric",
       "position": {
         "start": 36597,
@@ -595,7 +595,7 @@
     },
     {
       "text": "(1)",
-      "context": "artment crowding is associated with poor care for patients with severe pain. Ann. Emerg. Med. **51**(1), 1\u20135 (2008). https://doi.org/10.1016/j.annemergmed.2007.07.008\n- 31. Pulkkinen, E.: forecasting eme",
+      "context": "artment crowding is associated with poor care for patients with severe pain. Ann. Emerg. Med. **51**(1), 1–5 (2008). https://doi.org/10.1016/j.annemergmed.2007.07.008\n- 31. Pulkkinen, E.: forecasting eme",
       "citation_type": "numeric",
       "position": {
         "start": 36812,
@@ -605,7 +605,7 @@
     },
     {
       "text": "(3)",
-      "context": "of variables associated with daily mean emergency department length of stay. Ann. Emerg. Med. **49**(3), 265\u2013271 (2007). https://doi.org/10.1016/j.annemergmed.2006.11.007\n- 33. Rocha, C.N., Rodrigues, F.",
+      "context": "of variables associated with daily mean emergency department length of stay. Ann. Emerg. Med. **49**(3), 265–271 (2007). https://doi.org/10.1016/j.annemergmed.2006.11.007\n- 33. Rocha, C.N., Rodrigues, F.",
       "citation_type": "numeric",
       "position": {
         "start": 37177,
@@ -615,7 +615,7 @@
     },
     {
       "text": "(3)",
-      "context": "ocha, C.N., Rodrigues, F.: Forecasting emergency department admissions. J. Intell. Inf. Syst. **56**(3), 509\u2013528 (2021). https://doi.org/10.1007/s10844-021-00638- 9\n- 34. Schweigler, L.M., Desmond, J.S.,",
+      "context": "ocha, C.N., Rodrigues, F.: Forecasting emergency department admissions. J. Intell. Inf. Syst. **56**(3), 509–528 (2021). https://doi.org/10.1007/s10844-021-00638- 9\n- 34. Schweigler, L.M., Desmond, J.S.,",
       "citation_type": "numeric",
       "position": {
         "start": 37355,
@@ -625,7 +625,7 @@
     },
     {
       "text": "(4)",
-      "context": ", E.L., Younger, J.G.: Forecasting models of emergency department crowding. Acad. Emerg. Med. **16**(4), 301\u2013308 (2009). https://doi.org/10.1111/j.1553-2712.2009. 00356.x\n- 35. Sharafat, A.R., Bayati, M.",
+      "context": ", E.L., Younger, J.G.: Forecasting models of emergency department crowding. Acad. Emerg. Med. **16**(4), 301–308 (2009). https://doi.org/10.1111/j.1553-2712.2009. 00356.x\n- 35. Sharafat, A.R., Bayati, M.",
       "citation_type": "numeric",
       "position": {
         "start": 37598,
@@ -635,7 +635,7 @@
     },
     {
       "text": "(6)",
-      "context": "ic review of models for forecasting the number of emergency department visits. Emerg. Med. J. **26**(6), 395\u2013399 (2009). https://doi.org/10.1136/emj.2008.062380\n- 40. Whitt, W., Zhang, X.: Forecasting ar",
+      "context": "ic review of models for forecasting the number of emergency department visits. Emerg. Med. J. **26**(6), 395–399 (2009). https://doi.org/10.1136/emj.2008.062380\n- 40. Whitt, W., Zhang, X.: Forecasting ar",
       "citation_type": "numeric",
       "position": {
         "start": 38863,
@@ -665,7 +665,7 @@
     },
     {
       "text": "Minnesota (2019)",
-      "context": "e 1 (Long and Short Papers), pp. 4171\u20134186. Association for Computational Linguistics, Minneapolis, Minnesota (2019). https://doi.org/10.18653/v1/N19-1423\n- 10. Diehl, A.K., Morris, M.D., Mannis, S.A.: Use of calenda",
+      "context": "e 1 (Long and Short Papers), pp. 4171–4186. Association for Computational Linguistics, Minneapolis, Minnesota (2019). https://doi.org/10.18653/v1/N19-1423\n- 10. Diehl, A.K., Morris, M.D., Mannis, S.A.: Use of calenda",
       "citation_type": "author_year",
       "position": {
         "start": 32099,
@@ -675,7 +675,7 @@
     },
     {
       "text": "York (2019)",
-      "context": "wledge Discovery and Data Mining, KDD 2019, pp. 2527\u20132535. Association for Computing Machinery, New York (2019). https://doi.org/10.1145/3292500.3330662\n- 14. Farmer, R.D., Emami, J.: Models for forecasting hosp",
+      "context": "wledge Discovery and Data Mining, KDD 2019, pp. 2527–2535. Association for Computing Machinery, New York (2019). https://doi.org/10.1145/3292500.3330662\n- 14. Farmer, R.D., Emami, J.: Models for forecasting hosp",
       "citation_type": "author_year",
       "position": {
         "start": 33146,
@@ -695,7 +695,7 @@
     },
     {
       "text": "Linguistics (2020)",
-      "context": "ods in Natural Language Processing: System Demonstrations, pp. 38\u201345. Association for Computational Linguistics (2020). https://doi.org/10.18653/v1/2020.emnlp-demos.6\n- 42. Zachariasse, J.M., van der Hagen, V., Seiger,",
+      "context": "ods in Natural Language Processing: System Demonstrations, pp. 38–45. Association for Computational Linguistics (2020). https://doi.org/10.18653/v1/2020.emnlp-demos.6\n- 42. Zachariasse, J.M., van der Hagen, V., Seiger,",
       "citation_type": "author_year",
       "position": {
         "start": 39350,

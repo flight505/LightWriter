@@ -635,3 +635,45 @@ For the lo
    Context: se models if necessary to optimize the negative binomial distribution, as suggested by DeepAR paper (Salinas et al., 2020). We train each model with a maximum 300 epochs and employ early stopping if the validation loss is
    Normalized: salinas et al., 2020
 ----------------------------------------
+
+Unique References:
+--------------------------------------------------------------------------------
+- 1
+- 116
+- 12
+- 2
+- 3
+- 4
+- 7
+- alexandrov et al. 2020
+- alexandrov et al., 2020
+- box et al., 1970
+- choe et al., 2022
+- fusco et al., 2022
+- kim et al., 2022
+- lim et al. 2021
+- lim et al., 2021
+- liu et al., 2022a
+- liu et al., 2022b
+- makridakis et al., 2022
+- nie et al. 2023
+- nie et al., 2023
+- oreshkin et al., 2020
+- rangapuram et al., 2018
+- salinas et al. 2020
+- salinas et al., 2020
+- tatanov et al., 2022
+- tolstikhin et al., 2021
+- vaswani et al., 2017
+- wen et al. 2017
+- wen et al., 2017
+- wu et al. 2021
+- wu et al., 2021
+- xiong et al., 2020
+- zeng et al. 2023
+- zeng et al., 2023
+- zhang, 2023
+- zheng et al., 2022
+- zhou et al., 2021
+- zhou et al., 2022a
+- zhou et al., 2022b

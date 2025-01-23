@@ -5,7 +5,7 @@
   "citations": [
     {
       "text": "(116)",
-      "context": "Probabilistic and Neural Time Series Modeling in Python. *Journal of Machine Learning Research*, 21(116):1\u20136, 2020. URL http://jmlr.org/papers/v21/ 19-820.html.\n- Joos-Hendrik B\u00f6se, Valentin Flunkert, Jan",
+      "context": "Probabilistic and Neural Time Series Modeling in Python. *Journal of Machine Learning Research*, 21(116):1–6, 2020. URL http://jmlr.org/papers/v21/ 19-820.html.\n- Joos-Hendrik Böse, Valentin Flunkert, Jan",
       "citation_type": "numeric",
       "position": {
         "start": 44061,
@@ -15,7 +15,7 @@
     },
     {
       "text": "(12)",
-      "context": "and Yuyang Wang. Probabilistic demand forecasting at scale. *Proceedings of the VLDB Endowment*, 10(12):1694\u20131705, 2017.\n- George EP Box, Gwilym M Jenkins, Gregory C Reinsel, and Greta M Ljung. *Time ser",
+      "context": "and Yuyang Wang. Probabilistic demand forecasting at scale. *Proceedings of the VLDB Endowment*, 10(12):1694–1705, 2017.\n- George EP Box, Gwilym M Jenkins, Gregory C Reinsel, and Greta M Ljung. *Time ser",
       "citation_type": "numeric",
       "position": {
         "start": 44360,
@@ -25,7 +25,7 @@
     },
     {
       "text": "(3)",
-      "context": "Ramos-Francia. Multi-horizon inflation forecasts using disaggregated data. *Economic Modelling*, 27(3):666\u2013677, 2010.\n- Jaesung Choe, Chunghyun Park, Francois Rameau, Jaesik Park, and In So Kweon. Point",
+      "context": "Ramos-Francia. Multi-horizon inflation forecasts using disaggregated data. *Economic Modelling*, 27(3):666–677, 2010.\n- Jaesung Choe, Chunghyun Park, Francois Rameau, Jaesik Park, and In So Kweon. Point",
       "citation_type": "numeric",
       "position": {
         "start": 44681,
@@ -35,7 +35,7 @@
     },
     {
       "text": "(4)",
-      "context": "Springer, 2022.\n- Pascal Courty and Hao Li. Timing of seasonal sales. *The Journal of Business*, 72(4):545\u2013572, 1999.\n- Francesco Fusco, Damian Pascual, and Peter Staar. pnlp-mixer: an efficient all-mlp",
+      "context": "Springer, 2022.\n- Pascal Courty and Hao Li. Timing of seasonal sales. *The Journal of Business*, 72(4):545–572, 1999.\n- Francesco Fusco, Damian Pascual, and Peter Staar. pnlp-mixer: an efficient all-mlp",
       "citation_type": "numeric",
       "position": {
         "start": 45066,
@@ -45,7 +45,7 @@
     },
     {
       "text": "(1)",
-      "context": "als and trends by exponentially weighted moving averages. *International journal of forecasting*, 20(1):5\u201310, 2004.\n- Taesung Kim, Jinhee Kim, Yunwon Tae, Cheonbok Park, Jang-Ho Choi, and Jaegul Choo. Re",
+      "context": "als and trends by exponentially weighted moving averages. *International journal of forecasting*, 20(1):5–10, 2004.\n- Taesung Kim, Jinhee Kim, Yunwon Tae, Cheonbok Park, Jang-Ho Choi, and Jaegul Choo. Re",
       "citation_type": "numeric",
       "position": {
         "start": 45733,
@@ -55,7 +55,7 @@
     },
     {
       "text": "(1)",
-      "context": "rmittent demand forecasts with neural networks. *International Journal of Production Economics*, 143(1):198\u2013206, 2013.\n- Shiyang Li, Xiaoyong Jin, Yao Xuan, Xiyou Zhou, Wenhu Chen, Yu-Xiang Wang, and Xif",
+      "context": "rmittent demand forecasts with neural networks. *International Journal of Production Economics*, 143(1):198–206, 2013.\n- Shiyang Li, Xiaoyong Jin, Yao Xuan, Xiyou Zhou, Wenhu Chen, Yu-Xiang Wang, and Xif",
       "citation_type": "numeric",
       "position": {
         "start": 46457,
@@ -65,7 +65,7 @@
     },
     {
       "text": "(4)",
-      "context": "for interpretable multi-horizon time series forecasting. *International Journal of Forecasting*, 37(4):1748\u20131764, 2021.\n- Shizhan Liu, Hang Yu, Cong Liao, Jianguo Li, Weiyao Lin, Alex X. Liu, and Schahr",
+      "context": "for interpretable multi-horizon time series forecasting. *International Journal of Forecasting*, 37(4):1748–1764, 2021.\n- Shizhan Liu, Hang Yu, Cong Liao, Jianguo Li, Weiyao Lin, Alex X. Liu, and Schahr",
       "citation_type": "numeric",
       "position": {
         "start": 47343,
@@ -75,7 +75,7 @@
     },
     {
       "text": "(4)",
-      "context": "accuracy competition: Results, findings, and conclusions. *International Journal of Forecasting*, 38(4):1346\u20131364, 2022. ISSN 0169-2070. doi: https://doi.org/10.1016/j.ijforecast.2021.11.013. Special Iss",
+      "context": "accuracy competition: Results, findings, and conclusions. *International Journal of Forecasting*, 38(4):1346–1364, 2022. ISSN 0169-2070. doi: https://doi.org/10.1016/j.ijforecast.2021.11.013. Special Iss",
       "citation_type": "numeric",
       "position": {
         "start": 48073,
@@ -85,7 +85,7 @@
     },
     {
       "text": "(3)",
-      "context": "istic forecasting with autoregressive recurrent networks. *International Journal of Forecasting*, 36(3):1181\u20131191, 2020.\n- Oktai Tatanov, Stanislav Beliaev, and Boris Ginsburg. Mixer-tts: non-autoregress",
+      "context": "istic forecasting with autoregressive recurrent networks. *International Journal of Forecasting*, 36(3):1181–1191, 2020.\n- Oktai Tatanov, Stanislav Beliaev, and Boris Ginsburg. Mixer-tts: non-autoregress",
       "citation_type": "numeric",
       "position": {
         "start": 49115,
@@ -95,7 +95,7 @@
     },
     {
       "text": "(2)",
-      "context": "work forecasting for seasonal and trend time series. *European journal of operational research*, 160(2):501\u2013514, 2005.\n- Guoqiang Zhang, B Eddy Patuwo, and Michael Y Hu. Forecasting with artificial neura",
+      "context": "work forecasting for seasonal and trend time series. *European journal of operational research*, 160(2):501–514, 2005.\n- Guoqiang Zhang, B Eddy Patuwo, and Michael Y Hu. Forecasting with artificial neura",
       "citation_type": "numeric",
       "position": {
         "start": 51530,
@@ -105,7 +105,7 @@
     },
     {
       "text": "(1)",
-      "context": "g with artificial neural networks:: The state of the art. *International journal of forecasting*, 14(1):35\u201362, 1998.\n- J Zhang and K Nawata. Multi-step prediction for influenza outbreak by an adjusted lo",
+      "context": "g with artificial neural networks:: The state of the art. *International journal of forecasting*, 14(1):35–62, 1998.\n- J Zhang and K Nawata. Multi-step prediction for influenza outbreak by an adjusted lo",
       "citation_type": "numeric",
       "position": {
         "start": 51710,
@@ -115,7 +115,7 @@
     },
     {
       "text": "(7)",
-      "context": "iction for influenza outbreak by an adjusted long short-term memory. *Epidemiology & Infection*, 146(7):809\u2013816, 2018.\n- Tong Zhang. *Mathematical analysis of machine learning algorithms*. Cambridge Univ",
+      "context": "iction for influenza outbreak by an adjusted long short-term memory. *Epidemiology & Infection*, 146(7):809–816, 2018.\n- Tong Zhang. *Mathematical analysis of machine learning algorithms*. Cambridge Univ",
       "citation_type": "numeric",
       "position": {
         "start": 51866,
@@ -125,7 +125,7 @@
     },
     {
       "text": "Zeng et al. (2023)",
-      "context": "fective than univariate models due to their ability to leverage cross-variate information. However, Zeng et al. (2023) revealed that this is not always the case \u2013 Transformer-based models can indeed be significantly wo",
+      "context": "fective than univariate models due to their ability to leverage cross-variate information. However, Zeng et al. (2023) revealed that this is not always the case – Transformer-based models can indeed be significantly wo",
       "citation_type": "author_year",
       "position": {
         "start": 4470,
@@ -355,7 +355,7 @@
     },
     {
       "text": "(Box et al., 1970)",
-      "context": "cross-variate information auxiliary features |  | Models |\n|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |\n| I | \u2714 |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | Pa",
+      "context": "cross-variate information auxiliary features |  | Models |\n|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |\n| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | Pa",
       "citation_type": "author_year",
       "position": {
         "start": 8391,
@@ -365,7 +365,7 @@
     },
     {
       "text": "(Zeng et al., 2023)",
-      "context": "| Models |\n|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |\n| I | \u2714 |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer",
+      "context": "| Models |\n|  |  | (i.e. multivariateness) | ARIMA (Box et al., 1970) |  |\n| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer",
       "citation_type": "author_year",
       "position": {
         "start": 8440,
@@ -375,7 +375,7 @@
     },
     {
       "text": "(Oreshkin et al., 2020)",
-      "context": "variateness) | ARIMA (Box et al., 1970) |  |\n| I | \u2714 |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |",
+      "context": "variateness) | ARIMA (Box et al., 1970) |  |\n| I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |",
       "citation_type": "author_year",
       "position": {
         "start": 8470,
@@ -385,7 +385,7 @@
     },
     {
       "text": "(Nie et al., 2023)",
-      "context": "I | \u2714 |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |",
+      "context": "I | ✔ |  | LTSF-Linear (Zeng et al., 2023) | N-BEATS (Oreshkin et al., 2020) |\n|  |  |  | PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |",
       "citation_type": "author_year",
       "position": {
         "start": 8516,
@@ -405,7 +405,7 @@
     },
     {
       "text": "(Wu et al., 2021)",
-      "context": "PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | \u2714 | \u2714 | FEDformer (Zhou et al., 2022b) |",
+      "context": "PatchTST (Nie et al., 2023) |  |\n|  |  |  | Informer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |",
       "citation_type": "author_year",
       "position": {
         "start": 8607,
@@ -415,7 +415,7 @@
     },
     {
       "text": "(Liu et al., 2022a)",
-      "context": "nformer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | \u2714 | \u2714 | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2",
+      "context": "nformer (Zhou et al., 2021) |  |\n|  |  |  | Autoformer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2",
       "citation_type": "author_year",
       "position": {
         "start": 8652,
@@ -425,7 +425,7 @@
     },
     {
       "text": "(Zhou et al., 2022b)",
-      "context": "rmer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | \u2714 | \u2714 | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|",
+      "context": "rmer (Wu et al., 2021) |  |\n|  |  |  | Pyraformer (Liu et al., 2022a) |  |\n| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|",
       "citation_type": "author_year",
       "position": {
         "start": 8702,
@@ -435,7 +435,7 @@
     },
     {
       "text": "(Liu et al., 2022b)",
-      "context": "et al., 2022a) |  |\n| II | \u2714 | \u2714 | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (W",
+      "context": "et al., 2022a) |  |\n| II | ✔ | ✔ | FEDformer (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (W",
       "citation_type": "author_year",
       "position": {
         "start": 8757,
@@ -445,7 +445,7 @@
     },
     {
       "text": "(Zhou et al., 2022a)",
-      "context": "former (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | \u2714 | \u2714 | \u2714",
+      "context": "former (Zhou et al., 2022b) |  |\n|  |  |  |  | NS-Transformer (Liu et al., 2022b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | ✔ | ✔ | ✔",
       "citation_type": "author_year",
       "position": {
         "start": 8795,
@@ -455,7 +455,7 @@
     },
     {
       "text": "(Wen et al., 2017)",
-      "context": "b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | \u2714 | \u2714 | \u2714 | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 202",
+      "context": "b) |\n|  |  |  | FiLM (Zhou et al., 2022a) |  |\n|  |  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 202",
       "citation_type": "author_year",
       "position": {
         "start": 8874,
@@ -465,7 +465,7 @@
     },
     {
       "text": "(Rangapuram et al., 2018)",
-      "context": "|  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | \u2714 | \u2714 | \u2714 | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 2020) |\n|  |  |  |  | TFT (Lim et al., 2021) |\n|  |  |  |",
+      "context": "|  |  | TSMixer (this work) |  |\n|  |  |  | MQRNN (Wen et al., 2017) |  |\n| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 2020) |\n|  |  |  |  | TFT (Lim et al., 2021) |\n|  |  |  |",
       "citation_type": "author_year",
       "position": {
         "start": 8923,
@@ -475,7 +475,7 @@
     },
     {
       "text": "(Salinas et al., 2020)",
-      "context": "N (Wen et al., 2017) |  |\n| III | \u2714 | \u2714 | \u2714 | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 2020) |\n|  |  |  |  | TFT (Lim et al., 2021) |\n|  |  |  |  | TSMixer-Ext (this work) |\n\n- We propose TSMi",
+      "context": "N (Wen et al., 2017) |  |\n| III | ✔ | ✔ | ✔ | DSSM (Rangapuram et al., 2018) |\n|  |  |  |  | DeepAR (Salinas et al., 2020) |\n|  |  |  |  | TFT (Lim et al., 2021) |\n|  |  |  |  | TSMixer-Ext (this work) |\n\n- We propose TSMi",
       "citation_type": "author_year",
       "position": {
         "start": 8972,
